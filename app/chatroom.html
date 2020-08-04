@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="build/css/main.css">
+
+    <!-- Sliders -->
+    <link rel="stylesheet" type="text/css" href="libs//bxSlider/jquery.bxslider.css"/>
+    <link rel="stylesheet" href="libs/OwlCarousel/owl.carousel.css">
+    <link rel="stylesheet" href="libs/OwlCarousel/owl.theme.default.css">
+
+    <!-- Bootstrap, CSS -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+
+    <link rel="shortcut icon" href="img/header/logo.png"  type="image/x-icon" />
+    
+    <!-- Fonts -->
+    <link rel="stylesheet" href="fonts/oswald/oswald.css" />
+    
+    <title>JamPay</title>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    @@include('header.html')
+
+    <!--::::::::::::: MyProfile::::::::::::: !-->
+    <div class="container-fluid">
+      <div class="chatroom base_style">
+        <div class="breadcrumbs d-n-mob">Homepage -> Мой аккаунт -> Chatroom</div>
+        @@include('myAccNav.html')
+        <div class="breadcrumbs d-n-desc mb-3">Homepage -> Мой аккаунт -> Chatroom</div>
+        <div class="row ">
+          <div class="col-12 ">
+            <div class="text-center mb-2 big-text"> ЧАТ С ПРОДАВЦОМ</div>
+            <form class="w-900" action="">
+              <div class=" form-group">
+                <div class="flex half-width">
+                  <div class="text-left">ВЫБОР ПРОДАВЦА
+                    <div class="my_dropdown dropdown-toggle mb-2" data-toggle="dropdown">
+                      <span>DMG-MORY</span>
+                      <ul class="dropdown-menu my_dropdown_menu">
+                        <li>DMG-MORY</li>
+                        <li>DMG-MORY</li>
+                        <li>DMG-MORY</li>
+                        <li>DMG-MORY</li>
+                        <li>DMG-MORY</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div>
+                    <label>ТЕМА
+                      <input type="text" name="name" class="my_input form-control" placeholder="Тема">
+                    </label>
+                  </div>
+                </div>
+                <div class="flex justify-content-between">
+                  <div class=" w-80 mr-2">
+                    <label class="w-100 ">СООБЩЕНИЕ
+                      <textarea name="message" class="form-textarea my_textarea form-control " placeholder="Напишите сообщение"></textarea>
+                    </label>
+                  </div>
+                  <button class="my_button btn_green m-0 mb-2 align-self-end">ОТПРАВИТЬ</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-12 ">
+            <div class="text-center big-text">МОИ ЧАТЫ</div>
+            <div class="myChat w-900">
+              <div class="accordeon_head active flex">
+                <div class="accordeon_head_item">20/02/2020 12:20:59</div>
+                <div class="accordeon_head_item">ПРОДАВЕЦ:<span> DMG-MORY</span></div>
+                <div class="img_trash"><img src="img/basket/trash.png" alt="trash"></div>
+              </div>
+              <form class="accordeon_content small-text pt-2">
+                <span>Данные вашего заказа полны. Ожидание входа платежа.</span><br>
+                <span>Ваш станок DMG-MORI отправлен через Новая Почта, оплата произведена с Кредитной карты</span>
+                <div class="flex mt-3 mb-3 justify-content-between">
+                  <div class=" w-80 mr-2">
+                    <textarea name="message" class="form-textarea my_textarea form-control " placeholder="Напишите сообщение"></textarea> 
+                  </div>
+                  <button class="my_button btn_green m-0 align-self-end">ОТПРАВИТЬ</button>
+                </div>
+              </form>
+            </div>
+            <div class="myChat w-900">
+              <div class="accordeon_head flex">
+                <div class="accordeon_head_item">20/02/2020 12:20:59</div>
+                <div class="accordeon_head_item">ПРОДАВЕЦ:<span> ФОП ПЕТРЕНКО</span></div>
+                <div class="img_trash"><img src="img/basket/trash.png" alt="trash"></div>
+              </div>
+              <form class="accordeon_content small-text pt-2">
+                <span>Данные вашего заказа полны. Ожидание входа платежа.</span><br>
+                <span>Ваш станок DMG-MORI отправлен через Новая Почта, оплата произведена с Кредитной карты</span>
+                <div class="flex mt-3 mb-3 justify-content-between">
+                  <div class=" w-80 mr-2">
+                    <textarea name="message" class="form-textarea my_textarea form-control " placeholder="Напишите сообщение"></textarea> 
+                  </div>
+                  <button class="my_button btn_green m-0 align-self-end">ОТПРАВИТЬ</button>
+                </div>
+              </form>
+            </div>
+            <div class="myChat w-900">
+              <div class="accordeon_head flex">
+                <div class="accordeon_head_item">20/02/2020 12:20:59</div>
+                <div class="accordeon_head_item">ПРОДАВЕЦ:<span> DMG-MORY</span></div>
+                <div class="img_trash"><img src="img/basket/trash.png" alt="trash"></div>
+              </div>
+              <form class="accordeon_content small-text pt-2">
+                <span>Данные вашего заказа полны. Ожидание входа платежа.</span><br>
+                <span>Ваш станок DMG-MORI отправлен через Новая Почта, оплата произведена с Кредитной карты</span>
+                <div class="flex mt-3 mb-3 justify-content-between">
+                  <div class=" w-80 mr-2">
+                    <textarea name="message" class="form-textarea my_textarea form-control " placeholder="Напишите сообщение"></textarea> 
+                  </div>
+                  <button class="my_button btn_green m-0 align-self-end">ОТПРАВИТЬ</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="row ">
+          <div class="col-12 ">
+            <div class="text-center mb-1 big-text"> МОИ ОТЗЫВЫ</div>
+            <div class="myComment w-900">
+              <div class="accordeon_head active flex">
+                <div class="accordeon_head_item">20/02/2020 12:20:59</div>
+                <div class="accordeon_head_item">ЗАКАЗ№  <span>200200020002000</span></div>
+                <div class="accordeon_head_item">ПРОДАВЕЦ:<span> DMG-MORY</span></div>
+                <div class="img_trash"><img src="img/basket/trash.png" alt="trash"></div>
+              </div>
+              <div class="accordeon_content pt-2">
+                <div class="comment">
+                  <div class="comment-header flex">
+                    <div class="comment-theme">Mory Seky GHTN500</div>
+                    <div class="comment-rate"><img src="img/stars/stars_5.png" alt="stars"></div>
+                    <div class="comment-name">Петр Петренко-29/01/2020</div>
+                  </div>
+                  <div class="comment-text small-text">Супер мощный и хорошо скоотличной цене.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--::::::::::::: // MyProfile::::::::::::: !-->
+
+    @@include('footer.html')

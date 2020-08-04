@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="build/css/main.css">
+
+    <!-- Sliders -->
+    <link rel="stylesheet" type="text/css" href="libs//bxSlider/jquery.bxslider.css"/>
+    <link rel="stylesheet" href="libs/OwlCarousel/owl.carousel.css">
+    <link rel="stylesheet" href="libs/OwlCarousel/owl.theme.default.css">
+
+    <!-- Bootstrap, CSS -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+
+    <link rel="shortcut icon" href="img/header/logo.png"  type="image/x-icon" />
+    
+    <!-- Fonts -->
+    <link rel="stylesheet" href="fonts/oswald/oswald.css" />
+    
+    <title>JamPay</title>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    @@include('header.html')
+
+    <!--::::::::::::: favorite::::::::::::: !-->
+    <div class="container-fluid">
+      <div class="favorite base_style">
+        <div class="breadcrumbs d-n-mob">Homepage -> Мой аккаунт -> Избранные</div>
+        @@include('myAccNav.html')
+        <div class="breadcrumbs d-n-desc mb-3">Homepage -> Мой аккаунт -> Избранные</div>
+        <div class="row">
+          <div class=" col-12">
+            <div class="basket w-900">
+              <div class="flex basket-header">
+                <span class="column_1">ПРОДУКТ</span>
+                <span class="column_2">КОЛИЧЕСТВО</span>
+                <span class="column_3">ВСЕГО</span>
+                <div class="img_trash"><img src="img/basket/trash.png" alt="trash"></div>
+              </div>
+              <div class="basket-items" id="basket_scroll">
+                <div class="basket-item-block flex">
+                  <div class="basket-item flex column_1">
+                    <div class="basket-item-img"><img src="img/basket/bask_1.jpg" alt=""></div>
+                    <div class="basket-item-text text-left">
+                      <div class="product-title">DMG MORI DMU 50</div>
+                      <div class="product-num small-text">SKU: <span>102030405060708090</span></div>
+                      <div class="small-text">Ориентировочная дата доставки 8 марта 2020 года</div>
+                      <div class="">ЦЕНА ЗА ЕДИНИЦУ: 20 003 400,00 ₴</div>
+                    </div>
+                  </div>
+                  <div class="column_2">
+                    <span>200</span>
+                    <div class="request_status text-center"><img src="img/icons/like.png" alt="like"></div>
+                  </div>
+                  <div class="column_3">
+                    <div class="">20 003 400,00</div>
+                  </div>
+                  <div class="img_trash"><img src="img/basket/trash.png" alt="trash"></div>
+                </div>
+              </div>
+              <form action="">
+                <div class="flex justify-content-between align-items-center mt-3 small-text">
+                  <div class="regular">СТАТУС</div>
+                  <div><img src="img/icons/greenHeart.png" alt="heart"> Запрос удовлетворен</div>
+                  <div><img src="img/icons/redHeart.png" alt="heart"> Запрос отклонён</div>
+                  <div><img src="img/icons/yellowHeart.png" alt="heart"> Запрос удовлетворен в какой-то мере</div>
+                </div>
+                <div class="flex buttons mt-4">
+                  <!-- <div class="p-0"> -->
+                    <!-- <label class="text-center">ЗАПРОСИТЬ СКИДКУ В РАЗМЕРЕ
+                      <div class="flex align-items-center justify-content-center mt-1">
+                        <input type="text" name="name" class="my_input form-control discount_request mr-2" placeholder="15"> <span>%</span> 
+                      </div>
+                    </label> -->
+                    <button class="my_button btn_white">ЗАПРОСИТЬ СКИДКУ</button>
+                  <!-- </div> -->
+                  <!-- <div class="p-0"> -->
+                    <!-- <label class="text-center">СООБЩИТЬ КОГДА ЦЕНА ТОВАРА ДОСТИГНЕТ
+                      <div class="flex align-items-center justify-content-center mt-1">
+                        <input type="text" name="name" class="my_input form-control price_request mr-2" placeholder="000 000 000"> <span>ЗА ЕДИНИЦУ</span> 
+                      </div>
+                    </label> -->
+                    <button class="my_button btn_white">СЛЕДИТЬ ЗА ЦЕНОЙ</button>
+                  <!-- </div> -->
+                  <!-- <div class="p-0"> -->
+                    <button class="my_button btn_green">В КОРЗИНУ</button>
+                  <!-- </div> -->
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--::::::::::::: // favorite::::::::::::: !-->
+
+    @@include('footer.html')

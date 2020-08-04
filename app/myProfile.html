@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="build/css/main.css">
+
+    <!-- Sliders -->
+    <link rel="stylesheet" type="text/css" href="libs//bxSlider/jquery.bxslider.css"/>
+    <link rel="stylesheet" href="libs/OwlCarousel/owl.carousel.css">
+    <link rel="stylesheet" href="libs/OwlCarousel/owl.theme.default.css">
+
+    <!-- Bootstrap, CSS -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+
+    <link rel="shortcut icon" href="img/header/logo.png"  type="image/x-icon" />
+    
+    <!-- Fonts -->
+    <link rel="stylesheet" href="fonts/oswald/oswald.css" />
+    
+    <title>JamPay</title>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    @@include('header.html')
+
+    <!--::::::::::::: MyProfile::::::::::::: !-->
+    <div class="container-fluid min_width">
+      <div class="myProfile base_style">
+        <div class="breadcrumbs d-n-mob">Homepage -> Мой аккаунт -> Мой профиль</div>
+        @@include('myAccNav.html')
+        <div class="breadcrumbs d-n-desc mb-3">Homepage -> Мой аккаунт -> Мой профиль</div>
+        <div class="row mb-4">
+          <div class="col-12 col-lg-6">
+            <div class="text-center mb-3">МОИ ДАННЫЕ</div>
+            <form class="" action="">
+              <div class=" form-group text-center my_data_radio mb-1">
+                <input class="" type="radio" id="company" name="type" >
+                <label for="company">КОМПАНИЯ</label>
+                <input class="" type="radio" id="entrepreneur" name="type">
+                <label for="entrepreneur">ПРЕДПРИНИМАТЕЛЬ</label>
+                <input class="" type="radio" id="individual" name="type">
+                <label for="individual">ФИЗИЧЕСКОЕ ЛИЦО</label>
+              </div>
+              <div class=" form-group">
+                <label class="w-100"> <span id="my_data_name">НАЗВАНИЕ</span>
+                  <input class="my_input form-control" type="text" name="name" placeholder="Пример: ООО Мотор или ФОП Петренко Петр Петрович">
+                </label>
+                <div class="flex myProfile_change mb-3">
+                  <div class="text-left">
+                    АДРЕС (для компаний и предпринимателей укажите юридический) <br>
+                    <span class="small-text">Пример: офис 696, улица Мира,33, Киев, Украина, 01008</span> 
+                  </div>
+                  <button class="my_button btn_gray m-0" data-toggle="modal" data-target="#adressChange">CHANGE</button>
+                </div>
+                <div class="flex half-width">
+                  <label>E-MAIL
+                    <input type="email" name="email" class="my_input form-control" placeholder="E-mail">
+                  </label>
+                  <label>ТЕЛЕФОН (мобильный)
+                    <input type="text" name="phone"  class="my_input form-control" placeholder="+ХХ XXX XXX XXXX">
+                  </label>
+                  <label>КОД ЕГРПОУ (для Компаний) 
+                    <input type="text" name="name"  class="my_input form-control" placeholder="8 цифр">
+                  </label>
+                  <label>РКПН (для ФОП)
+                    <input type="text" name="name"  class="my_input form-control" placeholder="10 цифр">
+                  </label>
+                  <label>РАСЧЕТНЫЙ СЧЕТ В ФОРМАТЕ IBAN
+                    <input type="text" name="name"  class="my_input form-control" placeholder="Пример: UA 89 351005 1234567890123456789">
+                  </label>
+                  <label>ДИРЕКТОР (подписант)
+                    <input type="text" name="name"  class="my_input form-control" placeholder="ФИО">
+                  </label>
+                </div>
+                <div class="flex myProfile_change mb-2">
+                  <div class="text-left">
+                    КОНТАКТНОЕ ЛИЦО<br>
+                    <span class="small-text">Пример: Петренко Петр Петрович, менеджер, email@email.com. , +XX XXX XXX XXXX</span>
+                  </div>
+                  <button class="my_button btn_gray m-0" data-toggle="modal" data-target="#contactPerson">CHANGE</button>
+                </div>
+                <label class="w-100">URL ВАШЕГО САЙТА ИЛИ ИНТЕРНЕТ-МАГАЗИНА
+                  <input class="my_input form-control" type="text" name="name" placeholder="">
+                </label>
+                <div class="buttons flex">
+                  <button class="my_button btn_white">ДОБАВИТЬ АДРЕС</button>
+                  <button class="my_button btn_white">ДОБАВИТЬ ПРОФИЛЬ</button>
+                  <button class="my_button btn_green">СОХРАНИТЬ</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="text-center" id="title_password-change">ИЗМЕНИТЬ ПАРОЛЬ</div>
+            <form class="mb-4" action="">
+              <div class="flex half-width">
+                <label>ТЕКУЩИЙ ПАРОЛЬ
+                  <input type="password" name="password" class="my_input form-control"placeholder="Current password">
+                </label>
+                <label>НОВЫЙ ПАРОЛЬ
+                  <input type="password" name="password"  class="my_input form-control" placeholder="New password">
+                </label>
+                <label>ПОВТОРИТЬ ПАРОЛЬ 
+                  <input type="password" name="password"  class="my_input form-control" placeholder="Repeat password">
+                </label>
+                <button class="my_button btn_green m-0 mb-2 align-self-end">СОХРАНИТЬ</button>
+              </div>
+            </form>
+            <div class="text-center mb-2"> ИЗМЕНИТЬ E-MAIL</div>
+            <form class="" action="">
+              <div class="flex half-width">
+                <label>ТЕКУЩИЙ E-MAIL АДРЕС
+                  <input type="email" name="email" class="my_input form-control"placeholder="Current e-mail address">
+                </label>
+                <label>НОВЫЙ E-MAIL АДРЕС
+                  <input type="email" name="email"  class="my_input form-control" placeholder="New e-mail address">
+                </label>
+                <label>ПОДТВЕРДИТЬ E-MAIL АДРЕС
+                  <input type="email" name="email"  class="my_input form-control" placeholder="Confirm e-mail address">
+                </label>
+                <button class="my_button btn_green m-0 mb-2 align-self-end">СОХРАНИТЬ</button>
+              </div>
+            </form>
+            <div class="text-center mb-2 mt-4">ОТКАЗАТЬСЯ ОТ РАССЫЛКИ</div>
+            <button class="my_button btn_gray  align-self-end">ОТКАЗАТЬСЯ</button>
+            <div class="text-center mb-2 mt-4">  УДАЛИТЬ МОЮ УЧЕТНУЮ ЗАПИСЬ</div>
+            <button class="my_button btn_gray  align-self-end">УДАЛИТЬ</button>
+          </div>
+        </div>
+        <!-- Modal -->
+        <div class="my_modal  modal fade base_style"  id="adressChange" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog  modal_dialog_change" role="document">
+            <div class="text-center">АДРЕС (для компаний и предпринимателей укажите юридический)</div>
+            <form action="" class="mt-3">
+              <div class="flex justify-content-between">
+                <div class="text-left w-40">СТРАНА
+                  <div class="my_dropdown dropdown-toggle mt-1 p-1" data-toggle="dropdown">
+                    <span>UKRAINE</span>
+                    <ul class="dropdown-menu my_dropdown_menu">
+                      <li>UKRAINE</li>
+                      <li>UKRAINE</li>
+                      <li>UKRAINE</li>
+                      <li>UKRAINE</li>
+                    </ul>
+                  </div>
+                </div>
+                <label class="text-left w-20 mr-1 ml-1">ИНДЕКС
+                  <input type="name" name="name" class="my_input form-control" placeholder="XXXXXX">
+                </label>
+                <label class="text-left w-40">ГОРОД
+                  <input type="name" name="name" class="my_input form-control" placeholder="">
+                </label>
+              </div>
+              <div class="flex justify-content-between mb-3">
+                <label class="w-100">АДРЕС (улица \ проспект) 
+                  <input type="name" name="name" class="my_input form-control" placeholder="">
+                </label>
+                <label class="w-20 mr-1 ml-1" >ДОМ (строение)
+                  <input type="name" name="name" class="my_input form-control" placeholder="">
+                </label>
+                <label class="">КВАРТИРА (офис)
+                  <input type="name" name="name" class="my_input form-control" placeholder="">
+                </label>
+              </div>
+              <button class="my_button btn_green m-0 ml-auto">CОХРАНИТЬ</button>
+              <div class="close-menu">+</div>
+            </form>
+          </div>
+        </div>
+        <div class="my_modal  modal fade base_style"  id="contactPerson" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog  modal_dialog_change" role="document">
+            <div class="text-center mt-2">КОНТАКТНОЕ ЛИЦО</div>
+            <form action="" class="mt-3">
+              <div class="flex half-width mb-3">
+                <label>КОНТАКТНОЕ ЛИЦО
+                  <input type="name" name="name" class="my_input form-control" placeholder="ИМЯ ФАМИЛИЯ">
+                </label>
+                <label>ДОЛЖНОСТЬ
+                  <input type="name" name="name" class="my_input form-control" placeholder="">
+                </label>
+                <label>ТЕЛЕФОН (мобильный)
+                  <input type="phone" name="phone" class="my_input form-control" placeholder="+ХХ XXX XXX XXXX">
+                </label>
+                <label>E-MAIL
+                  <input type="email" name="email" class="my_input form-control" placeholder="">
+                </label>
+              </div>
+              <button class="my_button btn_green m-0 ml-auto">CОХРАНИТЬ</button>
+              <div class="close-menu">+</div>
+            </form>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+    
+    <!--::::::::::::: // MyProfile::::::::::::: !-->
+
+    @@include('footer.html')

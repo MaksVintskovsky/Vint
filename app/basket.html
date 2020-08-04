@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="build/css/main.css">
+
+    <!-- Sliders -->
+    <link rel="stylesheet" type="text/css" href="libs//bxSlider/jquery.bxslider.css"/>
+    <link rel="stylesheet" href="libs/OwlCarousel/owl.carousel.css">
+    <link rel="stylesheet" href="libs/OwlCarousel/owl.theme.default.css">
+
+    <!-- Bootstrap, CSS -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+
+    <link rel="shortcut icon" href="img/header/logo.png"  type="image/x-icon" />
+    
+    <!-- Fonts -->
+    <link rel="stylesheet" href="fonts/oswald/oswald.css" />
+    
+    <title>JamPay</title>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    @@include('header.html')
+
+    <!--:::::::::::::  Basket::::::::::::: !-->
+    <div class="container-fluid text-center base_style">
+      <div class="breadcrumbs">Homepage -&gt; Корзина</div>
+      <div class="row">
+        <div class="basket col-12 col-xl-6 ">
+          <div class="basket-bill btn_gradient"> СЧЕТ 1  (<span>Fastopt</span>) </div>
+          <div class="flex basket-header">
+            <span class="column_1">ПРОДУКТ</span>
+            <span class="column_2">КОЛИЧЕСТВО</span>
+            <span class="column_3">ВСЕГО</span>
+          </div>
+          <div class="basket-items" id="basket_scroll">
+            <div class="basket-item-block flex">
+              <div class="basket-item flex column_1">
+                <div class="basket-item-img"><img src="img/basket/bask_1.jpg" alt=""></div>
+                <div class="basket-item-text text-left">
+                  <div class="product-title">DMG MORI DMU 50</div>
+                  <div class="product-num small-text">SKU: <span>102030405060708090</span></div>
+                  <div class="small-text">Ориентировочная дата доставки 8 марта 2020 года</div>
+                  <div class="">ЦЕНА ЗА ЕДИНИЦУ: 20 003 400,00 ₴</div>
+                </div>
+              </div>
+              <div class="column_2">
+                <span>200</span>
+                <!-- <button class="my_button btn_green" data-toggle="modal" data-target="#modalChange" >CHANGE</button> -->
+                <div class="button_change mt-1" data-toggle="modal" data-target="#modalChange"><img src="img/icons/change.png" alt="change"></div>
+              </div>
+              <div class="column_3">
+                <div class="">20 003 400,00</div>
+              </div>
+            </div>
+            <div class="basket-item-block flex">
+              <div class="basket-item flex column_1">
+                <div class="basket-item-img"><img src="img/basket/bask_2.jpg" alt=""></div>
+                <div class="basket-item-text text-left">
+                  <div class="product-title">SAMSUNG ADG 10</div>
+                  <div class="product-num small-text">SKU: <span>102030405060708090</span></div>
+                  <div class="small-text">Ориентировочная дата доставки 8 марта 2020 года</div>
+                  <div class="">ЦЕНА ЗА ЕДИНИЦУ: 180 800,00  ₴</div>
+                </div>
+              </div>
+              <div class="column_2">
+                <span>200</span>
+                <!-- <button class="my_button btn_green" data-toggle="modal" data-target="#modalChange">CHANGE</button> -->
+                <div class="button_change mt-1" data-toggle="modal" data-target="#modalChange"><img src="img/icons/change.png" alt="change"></div>
+              </div>
+              <div class="column_3">
+                <div class="">20 003 400,00</div>
+              </div>
+            </div>
+            <div class="basket-item-block flex">
+              <div class="basket-item flex column_1">
+                <div class="basket-item-img"><img src="img/basket/bask_1.jpg" alt=""></div>
+                <div class="basket-item-text text-left">
+                  <div class="product-title">DMG MORI DMU 50</div>
+                  <div class="product-num small-text">SKU: <span>102030405060708090</span></div>
+                  <div class="small-text">Ориентировочная дата доставки 8 марта 2020 года</div>
+                  <div class="">ЦЕНА ЗА ЕДИНИЦУ: 20 003 400,00 ₴</div>
+                </div>
+              </div>
+              <div class="column_2">
+                <span>200</span>
+                <!-- <button class="my_button btn_green" data-toggle="modal" data-target="#modalChange">CHANGE</button> -->
+                <div class="button_change mt-1" data-toggle="modal" data-target="#modalChange"><img src="img/icons/change.png" alt="change"></div>
+              </div>
+              <div class="column_3">
+                <div class="">20 003 400,00</div>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-content-between">
+            <div class="basket-delivery text-left">
+              <span>ВВЕДИТЕ НОМЕР КУПОНА (если таковой имеется)</span>
+              <button class="btn_white my_button">ИСПОЛЬЗОВАТЬ КУПОН</button>
+              <span>МЕТОД ОПЛАТЫ И АДРЕС ДОСТАВКИ</span>
+              <div class="mt-2 small-text">Оплата: кредитная карта.</div>
+              <div class=" small-text">Доставка: Новая Почта, КК</div>
+            </div>
+            <div class="basket-total flex">
+              <div class="flex text-left mr-3">
+                <span>СТОИМОСТЬ ТОВАРОВ: </span>
+                <span>СТОИМОСТЬ ДОСТАВКИ: </span>
+                <span class="big-text">ОБЩАЯ СТОИМОСТЬ: </span>
+              </div>
+              <div class="flex">
+                <span>20 022 200,00 ₴</span>
+                <span>200,00 ₴</span>
+                <span class="big-text">33 022 200,00 ₴</span>
+              </div>
+              
+            </div>
+          </div>
+          <div class="basket-buttons flex"> 
+            <a href="#" class="btn_gray my_button">ИЗМЕНИТЬ</a>
+            <a href="#" class="btn_white my_button">ПРОДОЛЖИТЬ ПОКУПКИ</a>
+            <a href="#" class="my_button btn_green">ОФОРМИТЬ ЗАКАЗ</a>
+          </div>
+        </div>
+        <div class="basket col-12 col-xl-6">
+          <div class="basket-bill btn_gradient"> СЧЕТ 2  (<span>ФОП Петренко Петр</span>) </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal_change modal fade base_style" tabindex="-1" id="modalChange" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal_dialog_change" role="document">
+        <div class="text-center">CHANGE QUANTITY OF PRODUCC</div>
+        <div class="flex justify-content-around align-items-center mt-3">
+          <div class="product-title text-left">SAMSUNG ADG 10</div>
+          <div class="basket-item_count flex text-center">
+            <span class="basket-item_count-dell">-</span>
+            <input type="text" class="basket-item_count-value text-center" value="15">
+            <span class="basket-item_count-add">+</span>
+            <img src="img/basket/trash.png" alt="trash">
+          </div>
+        </div>
+        <div class="btn_group flex ">
+          <button  type="button" class="my_button btn_gray" data-dismiss="modal">ОТМЕНИТЬ</button>
+          <button  type="button" class="my_button btn_green">CОХРАНИТЬ</button>
+        </div>
+      </div>
+    </div>
+
+   
+    <!--::::::::::::: // Basket::::::::::::: !-->
+      
+    <!--::::::::::::: Slider::::::::::::: !-->
+  
+    <!--::::::::::::: //Slider::::::::::::: !-->
+       
+    
+    @@include('footer.html')

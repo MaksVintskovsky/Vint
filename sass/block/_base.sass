@@ -1,0 +1,304 @@
+$gray: #8A999C
+$green: #93C01F
+$yellow: #FFC944
+.col-xs-5th,
+.col-sm-5th,
+.col-md-5th,
+.col-lg-5th
+    position: relative
+    min-height: 1px
+    padding-right: 10px
+    padding-left: 10px
+    width: 20%
+    float: left
+.col-5-th
+	-webkit-box-flex: 0
+	-webkit-flex: 0 0 20%
+	-ms-flex: 0 0 20%
+	flex: 0 0 20%
+	max-width: 20%
+@media (min-width: 768px)
+	.col-sm-5th
+		-webkit-box-flex: 0
+		-webkit-flex: 0 0 20%
+		-ms-flex: 0 0 20%
+		flex: 0 0 20%
+		max-width: 20%
+@media (min-width: 992px)
+	.col-md-5th
+		-webkit-box-flex: 0
+		-webkit-flex: 0 0 20%
+		-ms-flex: 0 0 20%
+		flex: 0 0 20%
+		max-width: 20%
+@media (min-width: 1200px)
+	.col-lg-5th
+		-webkit-box-flex: 0
+		-webkit-flex: 0 0 20%
+		-ms-flex: 0 0 20%
+		flex: 0 0 20%
+		max-width: 20%
+html
+	// min-width: 640px
+	// width: 100%
+body
+	// min-width: 640px
+	// width: 100%
+.min_width
+	// min-width: 640px
+.base_style
+	min-width: 480px
+	max-width: 1200px
+	font-family: 'Formular', sans-serif
+	font-size: 16px
+	font-weight: 300
+	line-height: 1.1
+	color: #000
+	margin: 0 auto
+	img 
+		// vertical-align: top
+	h2 
+		font-size: 22px
+		font-weight: 500
+		@media(min-width:992px)
+			font-size: 26px
+	h3 
+		font-size: 22px
+		font-weight: 500
+		@media(min-width:992px)
+			font-size: 26px
+	h4 
+		font-size: 16px
+		font-weight: 700
+	p 
+		color: #000
+		font-size: 12px
+		font-weight: 500
+		line-height: 1.6
+		// text-align: left
+		text-align: justify
+		@media(min-width:992px)
+			font-size: 14px
+	a 
+		color: inherit
+		&:hover
+			text-decoration: none
+			color: inherit
+	ul, li 
+		margin: 0
+		padding: 0
+		list-style-type: none
+	.small-text
+		font-size: 13px
+		font-weight: 300
+	.my_dropdown
+		height: 26px
+		border: 1px solid $gray
+		position: relative
+		&::before
+			position: absolute
+			content: ""
+			width: 4px
+			height: 6px
+			right: 5px
+			top: 50%
+			margin-top: -3px
+			border-left: 3px solid transparent
+			border-right: 3px solid transparent
+			border-top: 6px solid #8a999c
+		span 
+			line-height: 1.8
+			margin-left: 10px
+			font-weight: 300
+	.my_dropdown_menu
+		border-radius: 0
+		min-width: 100%
+		color: $gray
+		font-size: 13px
+		font-weight: 300
+		margin: 0
+		li 
+			padding: 3px 10px
+			cursor: pointer
+			&:hover
+				background-color: $gray
+				color: #fff
+.breadcrumbs
+	text-align: left
+	font-size: 13px
+	font-weight: 300
+	margin-top: 5px
+
+.my_button
+	display: block
+	width: 90px
+	height: 30px
+	border: none
+	border-radius: 5px
+	text-align: center
+	background-color: $green
+	font-size: 12px
+	font-weight: 700
+	line-height: 2.4
+	// margin: 10px auto
+	outline: none!important
+	cursor: pointer
+	@media(min-width:768px)
+		// width: 138px
+	@media(min-width:868px)
+		// width: 158px
+.btn_green
+	background-color: #42b9c0
+	color: #ffffff!important
+	&:focus, &:active, &:hover
+		background-color: darken(#42b9c0, 10%)
+		color: #ffffff
+.btn_white
+	color: $green!important
+	background-color: #fff
+	border: 1px solid $green
+	&:focus, &:active, &:hover
+		background-color: darken(#E7EAEB, 10%)
+		color: inherit
+.btn_yellow
+	color: #fff!important
+	// border: 1px solid #42b9c0
+	background-color: $yellow
+	&:focus, &:active, &:hover
+		color: darken(#42b9c0, 10%)!important
+.btn_gradient
+	background-image: linear-gradient(150deg, #ffffff 0%,  #e6e6e6 100%)
+	height: 28px
+	color: $gray
+	border: 1px solid $gray
+	font-size: 13px
+	font-weight: 400
+	width: 158px
+	&:focus, &:active, &:hover
+		background-image: linear-gradient(150deg, #e6e6e6 0%, #ffffff 100%)
+
+.my_input, .my_textarea
+	padding: 0 0 0 7px!important
+	font-size: 14px!important
+	font-weight: 500!important
+	border: none!important
+	// border-radius: 0!important
+	color: $gray
+	outline: none
+	&:focus
+		box-shadow: none!important
+.my_input
+	// height: 26px!important
+input::-webkit-input-placeholder 
+	font-size: 13px
+	color: $gray
+	// font-weight: 400
+input::-moz-placeholder /* Firefox 18- */
+	font-size: 13px
+	color: $gray
+	// font-weight: 400
+input::-moz-placeholder /* Firefox 19+ */
+	font-size: 13px
+	color: $gray
+	// font-weight: 400
+input::-ms-input-placeholder 
+	font-size: 13px
+	color: $gray
+	// font-weight: 400
+textarea::-webkit-input-placeholder 
+	padding-top: 5px
+	font-size: 13px
+	color: $gray
+	// font-weight: 400
+textarea:-moz-placeholder  /* Firefox 18- */
+	padding-top: 5px
+	font-size: 13px
+	color: $gray
+	// font-weight: 400
+textarea::-moz-placeholder   /* Firefox 19+ */
+	padding-top: 5px
+	font-size: 13px
+	color: $gray
+	// font-weight: 400
+textarea:-ms-input-placeholder   
+	padding-top: 5px
+	font-size: 13px
+	color: $gray
+	// font-weight: 400
+.my_modal
+	.modal_dialog_change
+		margin: 0
+		left: 50%
+		top: 50%
+		transform: translate(-50%, -50%)!important
+		width: 400px
+		border: 1px solid $gray
+		padding: 10px 8px 20px
+		background-color: #fff
+		font-size: 15px
+		height: auto
+		p
+			font-size: 13px
+			text-align: justify
+	.modal-content
+		border: none
+	.modal-body
+		border: none
+		padding: 0
+	.modal-header, .modal-body
+		border: none
+		padding: 0
+		.close
+			outline: none
+			padding: 0px 3px
+			margin: -15px -17px 0px auto
+			font-family: 'Oswald', sans-serif 
+
+.d-n-mob-span
+	display: none
+	@media(min-width:768px)
+		display: inline
+.d-n-desc
+	@media(min-width:992px)
+		display: none!important
+.d-n-992
+	display: none!important
+	@media(min-width:992px)
+		display: block!important
+.flex
+	display: flex
+.big-text
+	font-size: 17px
+	font-weight: 400
+.d-b
+	display: block!important
+.cursor
+	cursor: pointer
+
+.accordeon_head
+    position: relative
+    padding: 10px 40px 10px 0
+    justify-content: space-between
+    cursor: pointer
+    &::after
+        position: absolute
+        content: ''
+        width: 10px
+        height: 10px
+        right: 8px
+        top: 50%
+        margin-top: -5px
+        border-top: 5px solid transparent
+        border-bottom: 5px solid transparent
+        border-left: 10px solid #8a999c
+        transition: 0.3s
+.accordeon_head.active
+    &::after
+        transform: rotate(90deg)
+.accordeon_head_item
+    margin-right: 10px
+.accordeon_content
+	border-top: 1px solid $gray
+
+
+
