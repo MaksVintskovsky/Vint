@@ -39,7 +39,7 @@
 	// display: flex
 	flex-direction: column
 	border-top: 1px solid #fff
-	// padding: 20px
+	z-index: 10
 	@media(min-width:992px)
 		display: flex
 		position: static
@@ -132,22 +132,9 @@
 		margin-left: 10px
 .menu_close
 	display: none
-.category_btn
-	background-color: $yellow
-	border-radius: 5px
-	min-width: 430px
-	max-width: 430px
-	// height: 48px
-	padding: 7px 20px
-	margin: 30px auto 0
-	text-transform: uppercase
-	font-size: 14px
-	font-weight: 700
-	cursor: pointer
-	@media(min-width:992px)
-		min-width: 220px
-		margin: 0
+
 .searchblock
+	position: relative
 	display: flex
 	justify-content: space-between
 	align-items: center

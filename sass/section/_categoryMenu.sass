@@ -1,0 +1,101 @@
+.category_btn
+    // position: absolute
+    // position: relative
+    // bottom: -70px
+    // left: 50%
+    // transform: translateX(-100%)
+    // display: none
+    background-color: $yellow
+    border-radius: 5px
+    min-width: 430px
+    max-width: 430px
+    width: 430px
+    // height: 48px
+    padding: 7px 20px
+    margin: 30px auto 0
+    text-transform: uppercase
+    font-size: 14px
+    font-weight: 700
+    cursor: pointer
+    z-index: 9
+    // text-align: center
+    span 
+        display: inline-block
+        margin-left: 90px
+        @media(min-width:992px)
+            margin-left: 0
+    @media(min-width:992px)
+        // display: block
+        position: relative
+        bottom: auto
+        left: auto
+        transform: translateX(0)
+        min-width: 220px
+        width: 220px
+        margin: 0
+        z-index: 9
+.menu_category
+    display: none
+    width: 100%
+    position: absolute
+    left: 0px
+    top: 0
+    text-transform: none
+    font-size: 16px
+    font-weight: 500
+    background-color: #fff
+    padding: 0 0px
+    z-index: 9
+    height: 100%
+    @media(min-width:992px)
+        padding: 0 10px
+        border-radius: 5px
+        border: 1px solid #e4e4e4
+        top: 100%
+        width: 220px
+        font-size: 12px
+        height: auto
+.category_nav
+li.category_item
+    position: relative
+    display: flex
+    align-items: center
+    border-bottom: 1px solid #e4e4e4
+    padding: 5px 0 5px 20px
+    img
+        margin-right: 10px
+        
+    a 
+        display: inline-block
+        
+        @media(min-width:992px)
+            max-width: 140px
+    &:hover
+        color: $green
+    @media(min-width:992px)
+        padding: 5px 0
+        &:after
+            position: absolute
+            content: '\203A'
+            font-size: 22px
+            width: 9px
+            // height: 5px
+            // background-image: url(../../img/header/arrow-small.png);
+            top: 11px
+            right: -3px
+            // -webkit-transform: rotate(-90deg);
+            // transform: rotate(-90deg);
+ul.secondary_menu
+    display: none
+    position: absolute
+    width: 300px
+    // left: 100%
+    right: -11px
+    transform: translateX(100%)
+    top: 0px
+    background-color: #fff
+    border-top: 2px solid $green
+    padding-left: 10px
+    li.secondary_menu_item
+        color: $green
+        padding: 5px

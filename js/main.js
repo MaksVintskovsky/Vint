@@ -185,13 +185,17 @@ $('.menu_btn').on('click', function(){
   $(this).hide();
   $('.menu_close').css('display', 'inline');
 });
+$('.category_item').on('click', function(){
+  $('.secondary_menu').slideToggle();
+  
+});
 
 
 
  // :::::::::::: my_button preventDefaul:::::::::::::
-// $('.my_button').on('click', function(e){
-//   e.preventDefault()
-// })
+$('a').on('click', function(e){
+  e.preventDefault()
+})
 
 function show_this_tab(elem) { 
   $(".card-tab").removeClass("active");
@@ -202,8 +206,12 @@ function show_this_tab(elem) {
 //   $('.search button').show();
 //   $('.search-img').hide();
 // };
-function close_cab(){
-  $('.cab-dropdown').hide();
+function toggle_category(){
+  $('.menu_category').slideToggle();
+};
+function close_category(){
+  // $('.menu_category').slideDown(200);
+  $('.menu_category').fadeOut(200);
 };
 function close_modal_change(e){
   $('#my_fucking_modal').hide(200);
