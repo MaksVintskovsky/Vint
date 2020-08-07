@@ -234,18 +234,18 @@ $('.category_item').on('click', function(){
 
 // :::::::::::: Catalog View:::::::::::::
 function lineView() { 
-  $(".catalog_item_wrapper").removeClass("table_view col-6 col-md-4").addClass("list_view ");
+  $(".catalog_item_wrapper").removeClass("col-6 col-md-4 table_view ").addClass("list_view ");
   
 };
 function tableView() { 
-  $(".catalog_item_wrapper").removeClass("list_view").addClass("table_view col-6 col-md-4");
+  $(".catalog_item_wrapper").removeClass("list_view").addClass("col-6 col-md-4 table_view");
   
 };
 
  // :::::::::::: my_button preventDefaul:::::::::::::
-$('a').on('click', function(e){
-  e.preventDefault()
-})
+// $('a').on('click', function(e){
+//   e.preventDefault()
+// })
 
 function show_this_tab(elem) { 
   $(".card-tab").removeClass("active");
