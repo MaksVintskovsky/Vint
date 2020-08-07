@@ -1,0 +1,229 @@
+.filter
+    display: none
+    width: 100% 
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 10
+    @media(min-width:992px)
+        position: static
+        display: block
+        background-color: #fff
+        border: 1px solid $border
+        border-radius: 5px
+        margin-right: 30px
+        width: 290px
+        min-width: 290px
+        // max-width: 290px
+        z-index: 8
+    @media(min-width:1100px)
+        // margin-right: 75px
+.filter_header
+    background-color: $yellow
+    border-radius: 5px 5px 0px 0
+    padding: 13px 13px 0 13px
+.filter_header_title
+    padding: 0 0 10px 0 
+    font-size: 14px
+    font-weight: 500
+.filter_header_selected
+    position: relative
+    font-size: 12px
+    font-weight: 500
+    background-color: #f6f6f6
+    border-radius: 3px
+    margin-bottom: 5px
+    padding: 3px 40px 3px 5px
+    min-width: 100px
+    width: max-content
+    &::after
+        position: absolute
+        content: '\2716'
+        font-size: 12px
+        right: 5px
+        top: 3px
+        cursor: pointer 
+.del_filters
+    border-top: 1px solid $border
+    margin: 10px 0
+    padding: 10px 0
+    font-size: 14px
+    font-weight: 500
+    img 
+        margin-right: 10px
+        vertical-align: bottom
+.filter-body
+    padding-left: 30px
+    @media(min-width:992px)
+        padding-left: 0
+.filter-title
+    background-color: #F6F6F6
+    font-weight: 700
+    font-size: 18px
+    margin-bottom: 10px
+    cursor: pointer
+    padding: 10px 
+    position: relative
+    margin-top: 10px
+    @media(min-width:992px)
+        font-size: 14px
+        margin-top: 0
+    &::after
+        position: absolute
+        content: ''
+        font-size: 22px
+        background-image: url(../../img/icons/filter_arr.png)
+        width: 12px
+        height: 7px
+        right: 15px
+        top: 13px
+        transform: rotate(-180deg) 
+    &.active
+        &::after
+            transform: rotate(360deg)
+.filter-section
+    // display: none
+    padding: 0 10px 10px
+    #slider-range
+        max-width: 220px
+        &::after, &::before
+            position: absolute
+            top: -5px
+            content: ''
+            width: 13px
+            height: 13px
+            background-color: #ededed
+            border-radius: 4px
+        &::after
+            right: -3px
+        &::before
+            left: -9px
+        @media(min-width:992px)
+            max-width: 200px
+    .ui-widget-header
+        background-color: $red
+    .ui-widget-content
+        margin-top: 25px
+        border: none
+        background-color: #ededed
+        color: #333333
+    .ui-slider-horizontal
+        height: 4px
+    .ui-state-default
+        background-color: $red
+        border: none
+        border-radius: 10px
+        width: 10px
+        height: 10px
+        top: -3px
+        outline: none
+        cursor: pointer
+    input 
+        width: 48px
+        height: 20px
+        padding-left: 5px
+        text-overflow: clip
+        color: #666666
+        font-size: 12px
+        font-weight: 700
+        margin-top: 15px
+        border-radius: 4px
+        border: 1px solid $border
+        color: #000000
+        font-size: 14px
+        font-weight: 400
+    .range-ok
+        width: 24px
+        background-color: $green
+        color: #ffffff
+        // border-radius: 4px
+        border: none
+        font-size: 14px
+        font-weight: 700
+        padding: 2px 4px
+        margin-left: 10px
+        cursor: pointer
+    .range-num
+        width: 23px
+        height: 12px
+        background-color: $green
+        position: absolute
+
+.filter-item
+.filter-checkbox-label
+    display: block
+    position: relative
+    padding-left: 30px
+    margin-bottom: 12px
+    cursor: pointer
+    // font-size: 22px
+    // -webkit-user-select: none
+    // -moz-user-select: none
+    // -ms-user-select: none
+    user-select: none
+.filter-checkbox
+    position: absolute
+    opacity: 0
+    height: 0
+    width: 0
+    z-index: -1
+    // width: 14px
+    // height: 14px
+    // border: none
+    // background-color: #ededed
+    &:checked + .filter-checkmark:after 
+        display: block   
+.filter-checkmark
+    position: absolute
+    top: 1px
+    left: 0
+    height: 18px
+    width: 18px
+    background-color: #fff
+    border-radius: 4px
+    &:after
+        content: ""
+        position: absolute
+        display: none
+        left: 5px
+        top: 5px
+        width: 8px
+        height: 8px
+        background-color: $red
+        border-radius: 2px
+        @media(min-width:992px)
+            width: 6px
+            height: 6px
+            left: 4px
+            top: 4px
+    @media(min-width:992px)
+        height: 14px
+        width: 14px
+        background-color: #ededed
+.filter-item_name
+    font-weight: 400
+    font-size: 18px
+    @media(min-width:992px)
+        font-size: 14px
+.item-amount
+    color: #878787
+    font-size: 13px
+    margin-left: 10px
+    @media(min-width:992px)
+        font-size: 10px
+.filter_rezult
+    text-align: center
+    border-top: 1px solid $border
+    padding: 10px 0px 
+    span
+        font-size: 16px
+.filter-buttons
+    // display: flex
+    align-items: center
+    button
+        color: #fff
+    .clear
+        font-size: 14px
+        font-weight: 400
+        color: #0089d5
+        padding: 5px

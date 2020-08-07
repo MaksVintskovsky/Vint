@@ -54,6 +54,26 @@ $(document).ready(function(){
       }
     }
   });
+
+  $( "#slider-range" ).slider({
+    range: true,
+    min: 0,
+    max: 20000,
+    values: [ 0, 20000 ],
+    slide: function( event, ui ) {
+      $( "#slider-min" ).val( ui.values[ 0 ] );
+      $( "#slider-max" ).val( ui.values[ 1 ] );
+    }
+  });
+
+  // $( ".ui-slider-handle" ).on('mousemove', function(e){
+  //   console.log($( "#slider-max" ).val())
+  //   $( ".ui-slider-handle::after" ).css( content , $( "#slider-max" ).val())
+  // });
+  // $( ".range-num" ).
+
+  $( "#slider-min" ).val( $( "#slider-range" ).slider( "values", 0 ) );
+  $( "#slider-max" ).val( $( "#slider-range" ).slider( "values", 1 ) );
   // $('.second_slider_right').owlCarousel({
   //   dots: false,
   //   loop: true,
@@ -156,7 +176,29 @@ $(document).ready(function(){
   //   }
   // });
 
- 
+  // :::::::::::: Filter :::::::::::::
+  // $('.btn-filtr').on('click', function(e){
+  //   e.preventDefault();
+  //   $('.filter-title').addClass('active');
+  //   filter.show();
+  //   bg.show(100);
+  // });
+  $('.filter-title').on('click', function(e){
+    e.preventDefault();
+    $(this).toggleClass('active');
+    $(this).next('.filter-section').slideToggle(200); 
+  });
+  $('.mob_btn-close').on('click', function(e){
+    e.preventDefault();
+    menu.hide();
+    filter.hide();
+    bg.hide(100);
+  });
+
+  $(".catalog_tab").click(function() {
+    $(".catalog_tab").removeClass("active").eq($(this).index()).addClass("active");
+    // $(".tab-content").hide().eq($(this).index()).fadeIn();
+  }).eq(0).addClass("active");
       // :::::::::::: Search :::::::::::::
   // $('.search').on('click', function(){
   //   $('.search-input').show().focus();
@@ -190,7 +232,15 @@ $('.category_item').on('click', function(){
   
 });
 
-
+// :::::::::::: Catalog View:::::::::::::
+function lineView() { 
+  $(".catalog_item_wrapper").removeClass("table_view col-6 col-md-4").addClass("list_view ");
+  
+};
+function tableView() { 
+  $(".catalog_item_wrapper").removeClass("list_view").addClass("table_view col-6 col-md-4");
+  
+};
 
  // :::::::::::: my_button preventDefaul:::::::::::::
 $('a').on('click', function(e){
