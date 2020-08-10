@@ -1,6 +1,7 @@
 $border: #E2E2E2
 $gray: #8A999C
 $gray-text: #706F6F
+$gray-bg: #F5F5F5
 $green: #93C01F
 $yellow: #FFC944
 $red: #E6332A
@@ -166,16 +167,10 @@ body
 		background-color: $yellow
 		&:focus, &:active, &:hover
 			background-color: darken(#FFC944, 10%)
-	.btn_gradient
-		background-image: linear-gradient(150deg, #ffffff 0%,  #e6e6e6 100%)
-		height: 28px
-		color: $gray
-		border: 1px solid $gray
-		font-size: 13px
-		font-weight: 400
-		width: 158px
+	.btn_gray
+		background-color: #F5F5F5
 		&:focus, &:active, &:hover
-			background-image: linear-gradient(150deg, #e6e6e6 0%, #ffffff 100%)
+			background-color: darken(#F5F5F5, 10%)
 
 .my_input, .my_textarea
 	padding: 0 0 0 7px!important

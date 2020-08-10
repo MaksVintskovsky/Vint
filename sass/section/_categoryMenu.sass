@@ -48,7 +48,7 @@
     z-index: 9
     height: 100%
     @media(min-width:992px)
-        padding: 0 10px
+        // padding: 0 10px
         border-radius: 5px
         border: 1px solid #e4e4e4
         top: 100%
@@ -72,8 +72,11 @@ li.category_item
             max-width: 140px
     &:hover
         color: $green
+        ul.secondary_menu
+            @media(min-width:992px)
+                display: block
     @media(min-width:992px)
-        padding: 5px 0
+        padding: 5px 10px
         &:after
             position: absolute
             content: '\203A'
@@ -82,20 +85,38 @@ li.category_item
             // height: 5px
             // background-image: url(../../img/header/arrow-small.png);
             top: 11px
-            right: -3px
+            right: 7px
             // -webkit-transform: rotate(-90deg);
             // transform: rotate(-90deg);
 ul.secondary_menu
     display: none
     position: absolute
-    width: 300px
-    // left: 100%
-    right: -11px
-    transform: translateX(100%)
+    width: 100%
     top: 0px
     background-color: #fff
-    border-top: 2px solid $green
     padding-left: 10px
+    z-index: 11
+    .category_item
+        padding: 15px 20px
+        &:first-child
+            &::after
+                display: none
+        &::after
+            position: absolute
+            content: ''
+            background-image: url(../../img/icons/filter_arr.png)
+            background-repeat: no-repeat
+            width: 11px
+            height: 9px
+            right: 15px
+            top: 20px
+            transform: rotate(90deg)
+    @media(min-width:992px)
+        width: 300px
+        right: -1px
+        transform: translateX(100%)
+        border-top: 2px solid $green
     li.secondary_menu_item
-        color: $green
-        padding: 5px
+        @media(min-width:992px)
+            color: $green
+            padding: 5px

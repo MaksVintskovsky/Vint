@@ -107,9 +107,9 @@
             <ul class="category_nav">
               <li class="category_item">
                 <img src="img/icons/category1.png" alt="icon">
-                <a href="catalog.html">Компьютерная техника</a>
+                <a href="">Компьютерная техника</a>
                 <ul class="secondary_menu">
-                  <li class="secondary_menu_item"><a href="">Ноутбуки</a></li>
+                  <li class="secondary_menu_item"><a href="catalog.html">Ноутбуки "/смотреть каталог/"</a></li>
                   <li class="secondary_menu_item"><a href="">Планшеты</a></li>
                   <li class="secondary_menu_item"><a href="">Видеокарты</a></li>
                   <li class="secondary_menu_item"><a href="">Жесткие диски и дисковые массивы</a></li>
@@ -155,7 +155,7 @@
             </ul>
           </div>
         </div>
-        <div class="search" onclick="hide_search();">
+        <div class="search">
           <form>
             <input type="search" class="my_input" placeholder="Поиск">
             <button type="submit" class="my_button"><img width="20px" src="img/header/search.png" alt="search"></button>
@@ -164,30 +164,19 @@
         <div class="sale">Распродажа</div>
         <div class="d-n-desc"><img src="img/header/baskG.png" alt=""></div>
       </div>
-      <div class="container-fluid d-n-desc ">
+      <div class=" d-n-desc catalog_mob">
         <div class="category_btn" >
-          <!-- <img src="img/header/category.png"  alt="menu"> <span>все категории</span> -->
-          <div onclick= "toggle_category();"><img src="img/header/category.png"  alt="menu"> <span>все категории</span></div>
+          <div onclick= "show_category();"><img src="img/header/category.png"  alt="menu"> <span>все категории</span></div>
           <div class="menu_category">
             <ul class="category_nav">
               <li class=" mt-3 pb-4 d-n-desc category_item" onclick= "close_category();">
                 <img src="img/slider/sliderLeft.png" alt="icon">
                 Каталог товаров
               </li>
-              <li class="category_item">
+              <li class="category_item" onclick="show_secondary_menu();">
                 <img src="img/icons/category1.png" alt="icon">
-                <a href="">Компьютерная техника</a>
-                <ul class="secondary_menu">
-                  <li class="secondary_menu_item"><a href="">Ноутбуки</a></li>
-                  <li class="secondary_menu_item"><a href="">Планшеты</a></li>
-                  <li class="secondary_menu_item"><a href="">Видеокарты</a></li>
-                  <li class="secondary_menu_item"><a href="">Жесткие диски и дисковые массивы</a></li>
-                  <li class="secondary_menu_item"><a href="">Мониторы</a></li>
-                  <li class="secondary_menu_item"><a href="">Компьютеры, неттопы, моноблоки</a></li>
-                  <li class="secondary_menu_item"><a href="">Процессоры</a></li>
-                  <li class="secondary_menu_item"><a href="">SSD</a></li>
-                  <li class="secondary_menu_item"><a href="">МФУ/Принтеры</a></li>
-                </ul>
+                <span >Компьютерная техника</span>
+                
               </li>
               <li class="category_item">
                 <img src="img/icons/category2.png" alt="icon">
@@ -223,7 +212,40 @@
               </li>
             </ul>
           </div>
-        </div> 
+        </div>
+        <ul class="category_nav secondary_menu ">
+          <li class=" mt-3 pb-4 d-n-desc category_item" onclick="close_secondary_menu();">
+            <img src="img/slider/sliderLeft.png" alt="icon">
+            Компьютерная техника
+          </li>
+          <li class="category_item">
+            <a href="catalog.html">Ноутбуки  "/смотреть каталог/"</a>
+          </li>
+          <li class="category_item">
+            <a href="">Планшеты</a>
+          </li>
+          <li class="category_item">
+            <a href="">Видеокарты</a>
+          </li>
+          <li class="category_item">
+            <a href="">Жесткие диски и дисковые массивы</a>
+          </li>
+          <li class="category_item">
+            <a href="">Мониторы</a>
+          </li>
+          <li class="category_item">
+            <a href="">Компьютеры, неттопы, моноблоки</a>
+          </li>
+          <li class="category_item">
+            <a href="">Процессоры</a>
+          </li>
+          <li class="category_item">
+            <a href="">SSD</a>
+          </li>
+          <li class="category_item">
+            <a href="">МФУ/Принтеры</a>
+          </li>
+        </ul>
       </div>
 
         <!--:::::::::::::  Video::::::::::::: !-->
@@ -346,8 +368,6 @@
                   <div class="bunner_subtitle">"Вы можете просто объяснить, что вам нужно,<br> и мы сами подберем лучшии</div>
                 </div>
                 <div class="col-12 col-lg-5"><a href="" class="my_button">Помогите</a></div>
-                
-                
               </div>
             </div>
             <div class="col-12 col-lg-8 ">
@@ -369,45 +389,39 @@
       </div>
       <!--::::::::::::: //Banner::::::::::::: !-->
       <!--::::::::::::: Partners::::::::::::: !-->
-      <div class="base_style">
-        <div class="partners">
-          <div class="slider_title">Наши партнеры</div>
-          <div class="partners_slider owl-carousel">
-            <div class="slider_item"><div><img src="img/brands/brand1.png" alt="brand"></div></div>
-            <div class="slider_item"><img src="img/brands/brand2.png" alt="brand"></div>
-            <div class="slider_item"><img src="img/brands/brand3.png" alt="brand"></div>
-            <div class="slider_item"><img src="img/brands/brand4.png" alt="brand"></div>
-            <div class="slider_item"><img src="img/brands/brand1.png" alt="brand"></div>
-            <div class="slider_item"><img src="img/brands/brand2.png" alt="brand"></div>
-            <div class="slider_item"><img src="img/brands/brand3.png" alt="brand"></div>
-          
-          </div>
+      <div class="partners">
+        <div class="slider_title">Наши партнеры</div>
+        <div class="partners_slider owl-carousel">
+          <div class="slider_item"><div><img src="img/brands/brand1.png" alt="brand"></div></div>
+          <div class="slider_item"><img src="img/brands/brand2.png" alt="brand"></div>
+          <div class="slider_item"><img src="img/brands/brand3.png" alt="brand"></div>
+          <div class="slider_item"><img src="img/brands/brand4.png" alt="brand"></div>
+          <div class="slider_item"><img src="img/brands/brand1.png" alt="brand"></div>
+          <div class="slider_item"><img src="img/brands/brand2.png" alt="brand"></div>
+          <div class="slider_item"><img src="img/brands/brand3.png" alt="brand"></div>
         </div>
       </div>
       <!--::::::::::::: //Partners::::::::::::: !-->
       <!--::::::::::::: Leader::::::::::::: !-->
-      <div class="base_style">
-        <div class=" row leader no-gutters">
-          <div class="col-12 col-lg-3"><img class="leader_foto" src="img/bg/leader.png" alt="foto"></div>
-          <div class="col-12 col-lg-5">
-            <div class="tel_mail">
-              <span>+38 067 856 78 90</span> <br>
-              <span>amazyukov@vint.com.ua</span>
-            </div>
-            <div class="leader_name">
-              <h3>Андрій <br> Мазюков</h3>
-              <span>директор</span>
-            </div>
-            
+      <div class=" row leader no-gutters">
+        <div class="col-12 col-lg-3"><img class="leader_foto" src="img/bg/leader.png" alt="foto"></div>
+        <div class="col-12 col-lg-5">
+          <div class="tel_mail">
+            <span>+38 067 856 78 90</span> <br>
+            <span>amazyukov@vint.com.ua</span>
           </div>
-          <div class="col-12 col-lg-4">
-            <div class="leader_sosial">
-              <div class="leader_sosial_icons">
-                <a href=""><img src="img/icons/messenger.png" alt="icon"></a>
-                <a href=""><img src="img/icons/viber.png" alt="icon"></a>            
-                <a href=""><img src="img/icons/telega.png" alt="icon"></a>
-                <div class="sosial_icons_title">Связаться со мной</div>
-              </div>
+          <div class="leader_name">
+            <h3>Андрій <br> Мазюков</h3>
+            <span>директор</span>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="leader_sosial">
+            <div class="leader_sosial_icons">
+              <a href=""><img src="img/icons/messenger.png" alt="icon"></a>
+              <a href=""><img src="img/icons/viber.png" alt="icon"></a>            
+              <a href=""><img src="img/icons/telega.png" alt="icon"></a>
+              <div class="sosial_icons_title">Связаться со мной</div>
             </div>
           </div>
         </div>
@@ -428,37 +442,37 @@
             Ивано-Франковск, Кировоград, Херсон, Хмельницкий, Черкассы, Чернигов, Черновцы, Винница, Луцк, Житомир, Запорожье, Ужгород.</p>
       </div>
       <!--::::::::::::: Blog::::::::::::: !-->
-      <div class="base_style">
-        <div class="our_blog">
-          <div class="slider_title">Наш блог</div>
-          <div class="our_blog_slider owl-carousel">
-            <div class="slider_item">
-              <img src="img/bg/blog.png" alt="blog">
-              <h4 class="slider_item_title">Тема блога. Название. </h4>
-              <div class="slider_item_text">Тема, которая расписана в три строки.<br> Текстовый блок. Описание. <br> Lorem ipsum dolor sit amee</div>
-              <a class="our_blog_read_more" href="">Читать больше</a>
-            </div>
-            <div class="slider_item">
-              <img src="img/bg/blog.png" alt="blog">
-              <h4 class="slider_item_title">Тема блога. Название. </h4>
-              <div class="slider_item_text">Тема, которая расписана в три строки.<br> Текстовый блок. Описание. <br> Lorem ipsum dolor sit amee</div>
-              <a class="our_blog_read_more" href="">Читать больше</a>
-            </div>
-            <div class="slider_item">
-              <img src="img/bg/blog.png" alt="blog">
-              <h4 class="slider_item_title">Тема блога. Название. </h4>
-              <div class="slider_item_text">Тема, которая расписана в три строки.<br> Текстовый блок. Описание. <br> Lorem ipsum dolor sit amee</div>
-              <a class="our_blog_read_more" href="">Читать больше</a>
-            </div>
-            <div class="slider_item">
-              <img src="img/bg/blog.png" alt="blog">
-              <h4 class="slider_item_title">Тема блога. Название. </h4>
-              <div class="slider_item_text">Тема, которая расписана в три строки.<br> Текстовый блок. Описание. <br> Lorem ipsum dolor sit amee</div>
-              <a class="our_blog_read_more" href="">Читать больше</a>
-            </div> 
+
+      <div class="our_blog">
+        <div class="slider_title">Наш блог</div>
+        <div class="our_blog_slider owl-carousel">
+          <div class="slider_item">
+            <img src="img/bg/blog.png" alt="blog">
+            <h4 class="slider_item_title">Тема блога. Название. </h4>
+            <div class="slider_item_text">Тема, которая расписана в три строки.<br> Текстовый блок. Описание. <br> Lorem ipsum dolor sit amee</div>
+            <a class="our_blog_read_more" href="">Читать больше</a>
           </div>
+          <div class="slider_item">
+            <img src="img/bg/blog.png" alt="blog">
+            <h4 class="slider_item_title">Тема блога. Название. </h4>
+            <div class="slider_item_text">Тема, которая расписана в три строки.<br> Текстовый блок. Описание. <br> Lorem ipsum dolor sit amee</div>
+            <a class="our_blog_read_more" href="">Читать больше</a>
+          </div>
+          <div class="slider_item">
+            <img src="img/bg/blog.png" alt="blog">
+            <h4 class="slider_item_title">Тема блога. Название. </h4>
+            <div class="slider_item_text">Тема, которая расписана в три строки.<br> Текстовый блок. Описание. <br> Lorem ipsum dolor sit amee</div>
+            <a class="our_blog_read_more" href="">Читать больше</a>
+          </div>
+          <div class="slider_item">
+            <img src="img/bg/blog.png" alt="blog">
+            <h4 class="slider_item_title">Тема блога. Название. </h4>
+            <div class="slider_item_text">Тема, которая расписана в три строки.<br> Текстовый блок. Описание. <br> Lorem ipsum dolor sit amee</div>
+            <a class="our_blog_read_more" href="">Читать больше</a>
+          </div> 
         </div>
       </div>
+
       <!--::::::::::::: //Blog::::::::::::: !-->
 
     

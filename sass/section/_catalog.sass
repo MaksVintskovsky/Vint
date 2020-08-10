@@ -3,8 +3,13 @@
     position: relative
     @media(min-width:992px)
         padding: 0px 15px
+        margin-bottom: 40px
     .breadcrumbs
         margin: 30px 0 20px 30px
+    // .flex
+    //     flex-wrap: wrap
+    //     align-content: flex-start
+
 .catalog
     width: 100%
     color: $gray-text
@@ -92,7 +97,7 @@
 .catalog_items
     margin: 20px 0px 20px 0
     @media(min-width:992px)
-        margin: 20px -17px 20px 0
+        margin: 20px -15px 20px 0
 .catalog_item_wrapper
     position: relative
     width: 100%
@@ -110,11 +115,19 @@
             min-width: 35%
             background-color: #F6F7F9
             border-right: 1px solid $border
-            img 
+            .catalog_item_img
                 margin: 0 auto
                 display: block
                 width: 70%
                 max-height: 100%
+            .label
+                top: 20px
+                left: 20px
+                img 
+                    display: block
+            .balance
+                top: 20px
+                right: 20px
         .catalog_item_body
             padding: 20px 30px 20px 15px
             width: 100%
@@ -159,12 +172,12 @@
     .catalog_item   
         flex-direction: column
         background-color: #F6F7F9
-        padding: 20px 10px
+        padding: 20px 15px
         text-align: center
         .catalog_item_img_block
             height: 180px
             min-height: 180px
-            img 
+            .catalog_item_img
                 margin: 0 auto
                 display: block
                 width: 70%
@@ -216,12 +229,25 @@
                 .catalog_item_price
                     display: none
 .catalog_item
+    
     display: flex
     border: 1px solid $border
     border-radius: 5px
     font-weight: 500
     font-size: 14px
     color: #000
+    .catalog_item_img_block
+        position: relative
+        .label
+            position: absolute
+            top: 0
+            left: 0
+            img 
+                display: block
+        .balance
+            position: absolute
+            top: 0
+            right: 0
 .catalog_item_comments
     font-size: 11px
     color: #0091D6
@@ -256,6 +282,7 @@
 .catalog_item_descr
     font-size: 12px
     color: $gray-text
+    text-align: justify
 .catalog_item_btn_block
     .my_button
         margin-bottom: 7px
@@ -283,13 +310,60 @@
     color: #0091D6
 .gray-text
     color: $gray-text
-.show_more_goods
-    border-top: 1px solid $border
-    border-bottom: 1px solid $border
-    padding: 20px 0
-    margin-bottom: 30px
-    text-align: center
-    color: $green
-    font-weight: 500
-    font-size: 14px
-    cursor: pointer
+.catalog_bottom
+    .show_more_goods
+        border-top: 1px solid $border
+        border-bottom: 1px solid $border
+        padding: 20px 0
+        margin-bottom: 40px
+        text-align: center
+        color: $green
+        font-weight: 500
+        font-size: 14px
+        cursor: pointer
+        &:hover
+            color: darken(#93C01F, 10%)
+    .catalog_num
+        .catalog_dropdown
+            margin: 0
+    .page_pagination
+        display: none
+        @media(min-width:992px)
+            display: inline-block
+            float: right
+        .page_item.active
+            .page-link
+                width: 25px
+                height: 25px
+                border-radius: 15px
+                background-color: $yellow
+                // margin-right: 2px
+                text-align: center
+        .page-link
+            border: none
+            font-size: 14px
+            font-weight: 500
+            color: #000
+            margin: 2px
+            line-height: 1.2
+            width: 25px
+        .page-link:hover
+            width: 25px
+            height: 25px
+            border-radius: 15px
+            background-color: lighten(#FFC944, 20%)
+.help_block
+    margin-top: 20px
+.banner4
+    width: 290px
+    height: 635px
+    background-image: url('/../../img/bg/bg_help4.png')
+    padding: 400px 20px 30px
+    border-radius: 10px
+    .bunner_subtitle
+        font-size: 12px
+        font-weight: 300
+        margin: 25px 0 40px
+    a 
+        margin: 0 auto
+        

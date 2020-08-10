@@ -41,7 +41,7 @@
 	transform: translate(50%, -100%)
 	right: 0
 
-.partners_slider, .our_blog_slider
+.partners_slider, .our_blog_slider, .views_slider
 	.slider_item
 		height: 120px
 		img 
@@ -57,12 +57,85 @@
 			outline: none
 			font-size: 30px
 			margin-right: 10px
+	.owl-dots
+		position: absolute
+		width: 100%
+		padding-left: 30px
+		top: -34px
+		left: 0px
+		@media(min-width:992px)
+			padding-left: 0px
+	button.owl-dot
+		height: 2px
+		width: 15%
+	button.owl-dot.active
+		background-color: $green
+.views_slider
+	.views_slider_item
+		width: 240px
+		text-align: center
+		margin: 0 auto
+		.catalog_item
+			display: block
+			@media(min-width:992px)
+				border: none
+		.catalog_item_img_block
+			background-color: #F6F7F9
+			padding: 15px 20px
+			.catalog_item_img
+				width: 70%
+				margin: 0 auto
+			.label
+				top: 20px
+				left: 20px
+			.balance
+				top: 20px
+				right: 20px
+		.catalog_item_top_block
+			background-color: #fff
+			padding: 15px 20px
+		.catalog_item_price .old_price
+			padding: 0 0 0 10px
+		.catalog_item_rating 
+			margin-top: 20px
+			img
+				display: inline-block
+	.slider_item
+		height: auto
+		img 
+			margin: 0 auto
+	.owl-nav
+		position: static
+		top: 50%
+		button.owl-prev
+			left: 5px
+			@media(min-width:992px)
+				transform: translateX(-50%)
+		button.owl-next
+			right: 5px
+			@media(min-width:992px)
+				transform: translateX(50%)
+	.owl-nav button.owl-prev, .owl-nav button.owl-next
+		position: absolute
+		top: 50%
+		height: 20px
+		outline: none
+		// transform: translateX(100%)
+		// @media(min-width:992px)
+		// 	transform: translateX(50%)
+		span 
+			outline: none
+			font-size: 30px
+			margin-right: 10px
+
 .slider_title
 	font-weight: 700
 	font-size: 18px
-	margin-bottom: 20px
 	padding-bottom: 10px
+	margin: 0 30px 20px
 	border-bottom: 1px solid #e4e4e4
+	@media(min-width:992px)
+		margin: 0 0px 20px
 .our_blog_slider
 	.slider_item
 		height: auto
