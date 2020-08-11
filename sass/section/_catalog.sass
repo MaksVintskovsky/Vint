@@ -57,37 +57,37 @@
     @media(min-width:992px)
         margin-right: 0
 .catalog_sort, .catalog_num
-    .catalog_dropdown
+.catalog_dropdown
+    font-size: 12px
+    font-weight: 500
+    position: relative
+    margin: 0 0 0 15px
+    @media(min-width:1050px)
+        margin: 0 0 0 30px
+    >span 
+        font-size: 16px
+        display: none
+        @media(min-width:768px)
+            display: inline
+    .dropdown-toggle
+        border: 1px solid $border
+        border-radius: 5px
+        padding: 5px 10px
+        img 
+            margin-left: 8px
+    .dropdown-menu
+        background-color: #fff
+        border: 1px solid $border
+        border-radius: 5px
+        padding: 5px
+        z-index: 2
         font-size: 12px
         font-weight: 500
-        position: relative
-        margin: 0 0 0 15px
-        @media(min-width:1050px)
-            margin: 0 0 0 30px
-        >span 
-            font-size: 16px
-            display: none
-            @media(min-width:768px)
-                display: inline
-        .dropdown-toggle
-            border: 1px solid $border
-            border-radius: 5px
-            padding: 5px 10px
-            img 
-                margin-left: 8px
-        .dropdown-menu
-            background-color: #fff
-            border: 1px solid $border
-            border-radius: 5px
-            padding: 5px
-            z-index: 2
-            font-size: 12px
-            font-weight: 500
-        .dropdown-item
-            padding: 5px 10px
-        .dropdown-item.active
-            background-color: #F6F7F9
-            color: inherit
+    .dropdown-item
+        padding: 5px 10px
+    .dropdown-item.active
+        background-color: #F6F7F9
+        color: inherit
 #view-line, #view-table
     margin-right: 10px
 .catalog_num
