@@ -1,166 +1,342 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, shrink-to-fit=no">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="build/css/main.css">
+@@include('header.html')
+  @@include('searchBlock.html')
 
-    <!-- Sliders -->
-    <link rel="stylesheet" type="text/css" href="libs//bxSlider/jquery.bxslider.css"/>
-    <link rel="stylesheet" href="libs/OwlCarousel/owl.carousel.css">
-    <link rel="stylesheet" href="libs/OwlCarousel/owl.theme.default.css">
-
-    <!-- Bootstrap, CSS -->
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
-
-    <link rel="shortcut icon" href="img/header/logo.png"  type="image/x-icon" />
-    
-    <!-- Fonts -->
-    <link rel="stylesheet" href="fonts/oswald/oswald.css" />
-    
-    <title>JamPay</title>
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-
-    @@include('header.html')
-
-    <!--:::::::::::::  Basket::::::::::::: !-->
-    <div class="container-fluid text-center base_style">
-      <div class="breadcrumbs">Homepage -&gt; Корзина</div>
-      <div class="row">
-        <div class="basket col-12 col-xl-6 ">
-          <div class="basket-bill btn_gradient"> СЧЕТ 1  (<span>Fastopt</span>) </div>
-          <div class="flex basket-header">
-            <span class="column_1">ПРОДУКТ</span>
-            <span class="column_2">КОЛИЧЕСТВО</span>
-            <span class="column_3">ВСЕГО</span>
+    <div class=" row no-gutters basket">
+      <div class="col-12 col-lg-8">
+        <div class="basket_items">
+          <div class="row no-gutters basket_items_header">
+            <div class="col-6">Ваша корзина</div>
+            <div class="col-6 clear_bask">Очистить корзину</div>
           </div>
-          <div class="basket-items" id="basket_scroll">
-            <div class="basket-item-block flex">
-              <div class="basket-item flex column_1">
-                <div class="basket-item-img"><img src="img/basket/bask_1.jpg" alt=""></div>
-                <div class="basket-item-text text-left">
-                  <div class="product-title">DMG MORI DMU 50</div>
-                  <div class="product-num small-text">SKU: <span>102030405060708090</span></div>
-                  <div class="small-text">Ориентировочная дата доставки 8 марта 2020 года</div>
-                  <div class="">ЦЕНА ЗА ЕДИНИЦУ: 20 003 400,00 ₴</div>
-                </div>
-              </div>
-              <div class="column_2">
-                <span>200</span>
-                <!-- <button class="my_button btn_green" data-toggle="modal" data-target="#modalChange" >CHANGE</button> -->
-                <div class="button_change mt-1" data-toggle="modal" data-target="#modalChange"><img src="img/icons/change.png" alt="change"></div>
-              </div>
-              <div class="column_3">
-                <div class="">20 003 400,00</div>
-              </div>
+          <div class="row no-gutters basket_item">
+            <div class="col-4 col-md-3 basket_item_img">
+              <img src="img/catalog/goods1.png" alt="img">
             </div>
-            <div class="basket-item-block flex">
-              <div class="basket-item flex column_1">
-                <div class="basket-item-img"><img src="img/basket/bask_2.jpg" alt=""></div>
-                <div class="basket-item-text text-left">
-                  <div class="product-title">SAMSUNG ADG 10</div>
-                  <div class="product-num small-text">SKU: <span>102030405060708090</span></div>
-                  <div class="small-text">Ориентировочная дата доставки 8 марта 2020 года</div>
-                  <div class="">ЦЕНА ЗА ЕДИНИЦУ: 180 800,00  ₴</div>
+            <div class="col-8 col-md-9">
+              <div class="row no-gutters basket_item_body">
+                <div class="col-12 col-lg-7">
+                  <div class="basket_item_title">Блейд-волчок Auldey InfinityNado Электроник Boxing Bear(YW624406)</div>
+                  <div class="basket_item_code">Артикул: 560562</div>
                 </div>
-              </div>
-              <div class="column_2">
-                <span>200</span>
-                <!-- <button class="my_button btn_green" data-toggle="modal" data-target="#modalChange">CHANGE</button> -->
-                <div class="button_change mt-1" data-toggle="modal" data-target="#modalChange"><img src="img/icons/change.png" alt="change"></div>
-              </div>
-              <div class="column_3">
-                <div class="">20 003 400,00</div>
-              </div>
-            </div>
-            <div class="basket-item-block flex">
-              <div class="basket-item flex column_1">
-                <div class="basket-item-img"><img src="img/basket/bask_1.jpg" alt=""></div>
-                <div class="basket-item-text text-left">
-                  <div class="product-title">DMG MORI DMU 50</div>
-                  <div class="product-num small-text">SKU: <span>102030405060708090</span></div>
-                  <div class="small-text">Ориентировочная дата доставки 8 марта 2020 года</div>
-                  <div class="">ЦЕНА ЗА ЕДИНИЦУ: 20 003 400,00 ₴</div>
+                <div class="col-12 col-lg-5  ">
+                  <div class="d-n-992 basket_item_price">1 500  грн</div>
+                  <div class="basket_item_amount ">
+                    <span>Количество</span>  
+                    <div class="item_count">
+                      <span class="cart_prod_qty_change cart_prod_qty_del">-</span>
+                      <input type="number" class="item_count_value" value="1">
+                      <span class="cart_prod_qty_change cart_prod_qty_add">+</span>
+                    </div>
+                  </div>
+                  <div class="d-n-desc basket_item_price">1 500  грн</div>
                 </div>
-              </div>
-              <div class="column_2">
-                <span>200</span>
-                <!-- <button class="my_button btn_green" data-toggle="modal" data-target="#modalChange">CHANGE</button> -->
-                <div class="button_change mt-1" data-toggle="modal" data-target="#modalChange"><img src="img/icons/change.png" alt="change"></div>
-              </div>
-              <div class="column_3">
-                <div class="">20 003 400,00</div>
               </div>
             </div>
           </div>
-          <div class="flex justify-content-between">
-            <div class="basket-delivery text-left">
-              <span>ВВЕДИТЕ НОМЕР КУПОНА (если таковой имеется)</span>
-              <button class="btn_white my_button">ИСПОЛЬЗОВАТЬ КУПОН</button>
-              <span>МЕТОД ОПЛАТЫ И АДРЕС ДОСТАВКИ</span>
-              <div class="mt-2 small-text">Оплата: кредитная карта.</div>
-              <div class=" small-text">Доставка: Новая Почта, КК</div>
+          <div class="row no-gutters basket_item">
+            <div class="col-4 col-md-3 basket_item_img">
+              <img src="img/catalog/goods1.png" alt="img">
             </div>
-            <div class="basket-total flex">
-              <div class="flex text-left mr-3">
-                <span>СТОИМОСТЬ ТОВАРОВ: </span>
-                <span>СТОИМОСТЬ ДОСТАВКИ: </span>
-                <span class="big-text">ОБЩАЯ СТОИМОСТЬ: </span>
+            <div class="col-8 col-md-9">
+              <div class="row no-gutters basket_item_body">
+                <div class="col-12 col-lg-7">
+                  <div class="basket_item_title">Блейд-волчок Auldey InfinityNado Электроник Boxing Bear(YW624406)</div>
+                  <div class="basket_item_code">Артикул: 560562</div>
+                </div>
+                <div class="col-12 col-lg-5  ">
+                  <div class="d-n-992 basket_item_price">1 500  грн</div>
+                  <div class="basket_item_amount ">
+                    <span>Количество</span>  
+                    <div class="item_count">
+                      <span class="cart_prod_qty_change cart_prod_qty_del">-</span>
+                      <input type="number" class="item_count_value" value="1">
+                      <span class="cart_prod_qty_change cart_prod_qty_add">+</span>
+                    </div>
+                  </div>
+                  <div class="d-n-desc basket_item_price">1 500  грн</div>
+                </div>
               </div>
-              <div class="flex">
-                <span>20 022 200,00 ₴</span>
-                <span>200,00 ₴</span>
-                <span class="big-text">33 022 200,00 ₴</span>
-              </div>
-              
             </div>
           </div>
-          <div class="basket-buttons flex"> 
-            <a href="#" class="btn_gray my_button">ИЗМЕНИТЬ</a>
-            <a href="#" class="btn_white my_button">ПРОДОЛЖИТЬ ПОКУПКИ</a>
-            <a href="#" class="my_button btn_green">ОФОРМИТЬ ЗАКАЗ</a>
+          <div class="row no-gutters basket_item">
+            <div class="col-4 col-md-3 basket_item_img">
+              <img src="img/catalog/goods1.png" alt="img">
+            </div>
+            <div class="col-8 col-md-9">
+              <div class="row no-gutters basket_item_body">
+                <div class="col-12 col-lg-7">
+                  <div class="basket_item_title">Блейд-волчок Auldey InfinityNado Электроник Boxing Bear(YW624406)</div>
+                  <div class="basket_item_code">Артикул: 560562</div>
+                </div>
+                <div class="col-12 col-lg-5  ">
+                  <div class="d-n-992 basket_item_price">1 500  грн</div>
+                  <div class="basket_item_amount ">
+                    <span>Количество</span>  
+                    <div class="item_count">
+                      <span class="cart_prod_qty_change cart_prod_qty_del">-</span>
+                      <input type="number" class="item_count_value" value="1">
+                      <span class="cart_prod_qty_change cart_prod_qty_add">+</span>
+                    </div>
+                  </div>
+                  <div class="d-n-desc basket_item_price">1 500  грн</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="basket_total_block">
+            <div class="row no-gutters">
+              <div class="col-6 basket_total_left">7 товар(ов) на сумму:</div>
+              <div class="col-6 basket_total_right">10 658 грн</div>
+            </div>
+            <div class="row no-gutters">
+              <div class="col-6 basket_total_left">Доставка:</div>
+              <div class="col-6 basket_total_right">бесплатно</div>
+            </div>
+            <div class="row no-gutters total_line">
+              <div class="col-6 basket_total_left">Итого:</div>
+              <div class="col-6 basket_total_right">10 658 грн</div>
+            </div>
           </div>
         </div>
-        <div class="basket col-12 col-xl-6">
-          <div class="basket-bill btn_gradient"> СЧЕТ 2  (<span>ФОП Петренко Петр</span>) </div>
+      </div>
+      <div class="col-12 col-lg-4">
+        <div class="basket_form">
+          <div class="basket_form_title">Данные для доставки</div>
+          <div class="row no-gutters mb-3">
+            <div class="col-6">Доставка в Киев</div>
+            <div class="col-6 change_city">Сменить город</div>
+          </div>
+          <div class="section_num">1</div>
+          <input type="text" name="name" class="form_input" placeholder="Введите имя*" value="">
+          <input type="text" name="phone" class="form_input" placeholder="+380" value="">
+          <input type="text" name="email" class="form_input" placeholder="Email*" value="">
+          <textarea name="more_info" cols="30" rows="10" class="form_input form_textarea" placeholder="Оставьте комментарий" ></textarea>
+          <div class="section_num">2</div>
+          <div class="deliv_type">
+            <label class="radio">
+              <input id="" type="radio" name="deliv_method_type" value="1" checked>
+              <div class="radio__text">По Киеву курьером</div>
+            </label>
+            <input type="text" name="address" class="form_input" placeholder="Адрес доставки" id="addr_input" value="">
+            <label class="radio">
+              <input id="" type="radio" name="deliv_method_type" value="2">
+              <div class="radio__text">Новой почтой</div>
+            </label>
+            <input type="text" name="address" class="form_input" placeholder="Отделение №2, ул. Бережанская, 9" id="addr_input" value="">
+            <div class="map"><img src="img/basket/gps.png" alt=""> Карта</div>
+            <label class="radio">
+              <input id="" type="radio" name="deliv_method_type" value="2">
+              <div class="radio__text">Самовывоз</div>
+            </label>
+          </div>
+          <div class="payment_type">
+            <label class="radio">
+              <input id="" type="radio" name="pay_method_type" value="1" checked>
+              <div class="radio__text">Оплата наличными курьеру (только грн)</div>
+            </label>
+
+            <label class="radio">
+              <input id="" type="radio" name="pay_method_type" value="2">
+              <div class="radio__text">Наложенный платеж</div>
+            </label>
+
+            <label class="radio">
+              <input id="" type="radio" name="pay_method_type" value="2">
+              <div class="radio__text">Перевод на карточку ПриватБанка <br> (1% комиссия банка)</div>
+            </label>
+            <label class="radio">
+              <input id="" type="radio" name="pay_method_type" value="2">
+              <div class="radio__text">Интернет эквайринг</div>
+            </label>
+            <label class="radio">
+              <input id="" type="radio" name="pay_method_type" value="2">
+              <div class="radio__text">Терминал</div>
+            </label>
+            <label class="radio">
+              <input id="" type="radio" name="pay_method_type" value="2">
+              <div class="radio__text">Безнал на СПД</div>
+            </label>
+            <label class="radio">
+              <input id="" type="radio" name="pay_method_type" value="2">
+              <div class="radio__text">Безнал на ТОВ</div>
+            </label>
+          </div>
+          <label class="radio mt-5 mb-3">
+            <input id="" type="radio" name="no_confirm" value="2">
+            <div class="radio__text">Оформить заказ без подтверждения</div>
+          </label>
+          <input id="basket_submit" type="submit" class="my_button basket_submit" value="Оформить заказ">
+        
+          <div class="continue"><a href="">Продолжить выбор</a></div>
         </div>
       </div>
     </div>
-    <div class="modal_change modal fade base_style" tabindex="-1" id="modalChange" role="dialog" aria-hidden="true">
-      <div class="modal-dialog modal_dialog_change" role="document">
-        <div class="text-center">CHANGE QUANTITY OF PRODUCC</div>
-        <div class="flex justify-content-around align-items-center mt-3">
-          <div class="product-title text-left">SAMSUNG ADG 10</div>
-          <div class="basket-item_count flex text-center">
-            <span class="basket-item_count-dell">-</span>
-            <input type="text" class="basket-item_count-value text-center" value="15">
-            <span class="basket-item_count-add">+</span>
-            <img src="img/basket/trash.png" alt="trash">
+    <div class="views">
+      <div class="slider_title">Вы просматривали</div>
+      <div class="views_slider owl-carousel">
+        <div class="views_slider_item">
+          <div class="catalog_item ">
+            <div class="catalog_item_img_block">
+              <img class="catalog_item_img" src="img/catalog/catalog-item.png" alt="img">
+              <div class="label">
+                <img src="img/catalog/disc_label.png" alt="labal">
+                <img src="img/catalog/disc_yellow.png" alt="labal">
+              </div>
+              <div class="balance"><img src="img/catalog/balance_black.png" alt="img"></div>
+            </div>
+            <div class="catalog_item_body">
+              <div class="catalog_item_top_block">
+                <div class="name_rate">
+                  <div class="catalog_item_title"><a href=""> Мобильный телефон Samsung Galaxy M31  6/128GB Blue (SM-M315FZBVSEK)</a></div>
+                  <div class="catalog_item_rating">
+                    <img src="img/catalog/stars.png" alt="stars">
+                    <span class="catalog_item_comments">34 отзыва</span>
+                  </div>
+                </div>
+                <div class="catalog_item_price">
+                  <span> 155 грн</span>
+                  <span class="old_price"> 155 грн</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="btn_group flex ">
-          <button  type="button" class="my_button btn_gray" data-dismiss="modal">ОТМЕНИТЬ</button>
-          <button  type="button" class="my_button btn_green">CОХРАНИТЬ</button>
+        <div class="views_slider_item">
+          <div class="catalog_item ">
+            <div class="catalog_item_img_block">
+              <img class="catalog_item_img" src="img/catalog/catalog-item.png" alt="img">
+              <div class="label">
+                <img src="img/catalog/disc_label.png" alt="labal">
+                <img src="img/catalog/disc_yellow.png" alt="labal">
+              </div>
+              <div class="balance"><img src="img/catalog/balance_black.png" alt="img"></div>
+            </div>
+            <div class="catalog_item_body">
+              <div class="catalog_item_top_block">
+                <div class="name_rate">
+                  <div class="catalog_item_title"><a href=""> Мобильный телефон Samsung Galaxy M31  6/128GB Blue (SM-M315FZBVSEK)</a></div>
+                  <div class="catalog_item_rating">
+                    <img src="img/catalog/stars.png" alt="stars">
+                    <span class="catalog_item_comments">34 отзыва</span>
+                  </div>
+                </div>
+                <div class="catalog_item_price">
+                  <span class="old_price"> 155 грн</span>
+                  <span> 155 грн</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="views_slider_item">
+          <div class="catalog_item ">
+            <div class="catalog_item_img_block">
+              <img class="catalog_item_img" src="img/catalog/catalog-item.png" alt="img">
+              <div class="label">
+                <img src="img/catalog/disc_label.png" alt="labal">
+                <img src="img/catalog/disc_yellow.png" alt="labal">
+              </div>
+              <div class="balance"><img src="img/catalog/balance_black.png" alt="img"></div>
+            </div>
+            <div class="catalog_item_body">
+              <div class="catalog_item_top_block">
+                <div class="name_rate">
+                  <div class="catalog_item_title"><a href=""> Мобильный телефон Samsung Galaxy M31  6/128GB Blue (SM-M315FZBVSEK)</a></div>
+                  <div class="catalog_item_rating">
+                    <img src="img/catalog/stars.png" alt="stars">
+                    <span class="catalog_item_comments">34 отзыва</span>
+                  </div>
+                </div>
+                <div class="catalog_item_price">
+                  <span class="old_price"> 155 грн</span>
+                  <span> 155 грн</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="views_slider_item">
+          <div class="catalog_item ">
+            <div class="catalog_item_img_block">
+              <img class="catalog_item_img" src="img/catalog/catalog-item.png" alt="img">
+              <div class="label">
+                <img src="img/catalog/disc_label.png" alt="labal">
+                <img src="img/catalog/disc_yellow.png" alt="labal">
+              </div>
+              <div class="balance"><img src="img/catalog/balance_black.png" alt="img"></div>
+            </div>
+            <div class="catalog_item_body">
+              <div class="catalog_item_top_block">
+                <div class="name_rate">
+                  <div class="catalog_item_title"><a href=""> Мобильный телефон Samsung Galaxy M31  6/128GB Blue (SM-M315FZBVSEK)</a></div>
+                  <div class="catalog_item_rating">
+                    <img src="img/catalog/stars.png" alt="stars">
+                    <span class="catalog_item_comments">34 отзыва</span>
+                  </div>
+                </div>
+                <div class="catalog_item_price">
+                  <span class="old_price"> 155 грн</span>
+                  <span> 155 грн</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="views_slider_item">
+          <div class="catalog_item ">
+            <div class="catalog_item_img_block">
+              <img class="catalog_item_img" src="img/catalog/catalog-item.png" alt="img">
+              <div class="label">
+                <img src="img/catalog/disc_label.png" alt="labal">
+                <img src="img/catalog/disc_yellow.png" alt="labal">
+              </div>
+              <div class="balance"><img src="img/catalog/balance_black.png" alt="img"></div>
+            </div>
+            <div class="catalog_item_body">
+              <div class="catalog_item_top_block">
+                <div class="name_rate">
+                  <div class="catalog_item_title"><a href=""> Мобильный телефон Samsung Galaxy M31  6/128GB Blue (SM-M315FZBVSEK)</a></div>
+                  <div class="catalog_item_rating">
+                    <img src="img/catalog/stars.png" alt="stars">
+                    <span class="catalog_item_comments">34 отзыва</span>
+                  </div>
+                </div>
+                <div class="catalog_item_price">
+                  <span class="old_price"> 155 грн</span>
+                  <span> 155 грн</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="views_slider_item">
+          <div class="catalog_item ">
+            <div class="catalog_item_img_block">
+              <img class="catalog_item_img" src="img/catalog/catalog-item.png" alt="img">
+              <div class="label">
+                <img src="img/catalog/disc_label.png" alt="labal">
+                <img src="img/catalog/disc_yellow.png" alt="labal">
+              </div>
+              <div class="balance"><img src="img/catalog/balance_black.png" alt="img"></div>
+            </div>
+            <div class="catalog_item_body">
+              <div class="catalog_item_top_block">
+                <div class="name_rate">
+                  <div class="catalog_item_title"><a href=""> Мобильный телефон Samsung Galaxy M31  6/128GB Blue (SM-M315FZBVSEK)</a></div>
+                  <div class="catalog_item_rating">
+                    <img src="img/catalog/stars.png" alt="stars">
+                    <span class="catalog_item_comments">34 отзыва</span>
+                  </div>
+                </div>
+                <div class="catalog_item_price">
+                  <span class="old_price"> 155 грн</span>
+                  <span> 155 грн</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-   
-    <!--::::::::::::: // Basket::::::::::::: !-->
-      
-    <!--::::::::::::: Slider::::::::::::: !-->
-  
-    <!--::::::::::::: //Slider::::::::::::: !-->
-       
-    
-    @@include('footer.html')
+  @@include('footer.html')

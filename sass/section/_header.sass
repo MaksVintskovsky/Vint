@@ -10,11 +10,12 @@
 		order: 1
 		li 
 			padding: 10px 10px
+			&:hover
+				color: $yellow
 			a 
 				padding: 10px 10px
 	@media(min-width:992px)
 		height: 186px
-	@media(min-width:992px)
 		nav 
 			margin-left: 20px
 			order: 0
@@ -61,6 +62,8 @@
 	>div
 		padding: 10px
 		cursor: pointer
+		&:hover
+			color: $yellow
 		@media(min-width:992px)
 			display: inline-block
 	.cabEnter
@@ -130,6 +133,8 @@
 	position: relative
 	width: 100%
 	margin: 0 20px 0 0 
+	.form_input
+		margin: 0
 	@media(min-width:992px)
 		margin: 0 20px
 	.my_button

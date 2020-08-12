@@ -5,6 +5,7 @@ $gray-bg: #F5F5F5
 $green: #93C01F
 $yellow: #FFC944
 $red: #E6332A
+$blue: #0091D6
 .col-xs-5th,
 .col-sm-5th,
 .col-md-5th,
@@ -68,7 +69,7 @@ body
 		@media(min-width:992px)
 			font-size: 26px
 	h3 
-		font-size: 22px
+		font-size: 18px
 		font-weight: 500
 		@media(min-width:992px)
 			font-size: 26px
@@ -93,9 +94,6 @@ body
 		margin: 0
 		padding: 0
 		list-style-type: none
-	.small-text
-		font-size: 13px
-		font-weight: 300
 	.my_dropdown
 		height: 26px
 		border: 1px solid $gray
@@ -139,19 +137,14 @@ body
 		font-size: 12px
 		font-weight: 700
 		line-height: 2
-		// outline: none!important
 		cursor: pointer
 		&:focus, &:active, &:hover
 			background-color: darken(#93C01F, 10%)
-		@media(min-width:768px)
-			// width: 138px
 		@media(min-width:992px)
 			height: 30px
 			line-height: 2.4
-			// width: 158px
 	.btn_green
 		background-color: #42b9c0
-		// color: #ffffff
 		&:focus, &:active, &:hover
 			background-color: darken(#93C01F, 10%)
 			color: #ffffff
@@ -172,54 +165,58 @@ body
 		&:focus, &:active, &:hover
 			background-color: darken(#F5F5F5, 10%)
 
-.my_input, .my_textarea
+.form_input, .my_textarea
 	padding: 0 0 0 7px
-	font-size: 14px
+	font-size: 16px
 	font-weight: 500
 	border: none
-	// border-radius: 0
-	color: $gray
+	border-radius: 5px
+	color: $gray-text
 	outline: none
+	margin-bottom: 15px
 	&:focus
 		box-shadow: none
-.my_input
-	// height: 26px
+	@media(min-width:992px)
+		font-size: 12px
+.form_input
+	height: 40px
+	width: 100%
 input::-webkit-input-placeholder 
 	font-size: 12px
-	color: $gray
-	// font-weight: 400
+	color: $gray-text
+	font-weight: 500
 input::-moz-placeholder /* Firefox 18- */
 	font-size: 12px
-	color: $gray
-	// font-weight: 400
+	color: $gray-text
+	font-weight: 500
 input::-moz-placeholder /* Firefox 19+ */
 	font-size: 12px
-	color: $gray
-	// font-weight: 400
+	color: $gray-text
+	font-weight: 500
 input::-ms-input-placeholder 
 	font-size: 12px
-	color: $gray
-	// font-weight: 400
+	color: $gray-text
+	font-weight: 500
 textarea::-webkit-input-placeholder 
 	// padding-top: 5px
 	font-size: 12px
-	color: $gray
-	// font-weight: 400
+	color: $gray-text
+	font-weight: 500
 textarea:-moz-placeholder  /* Firefox 18- */
 	// padding-top: 5px
 	font-size: 12px
-	color: $gray
-	// font-weight: 400
+	color: $gray-text
+	font-weight: 500
 textarea::-moz-placeholder   /* Firefox 19+ */
 	// padding-top: 5px
 	font-size: 12px
-	color: $gray
-	// font-weight: 400
+	color: $gray-text
+	font-weight: 500
 textarea:-ms-input-placeholder   
 	// padding-top: 5px
 	font-size: 12px
-	color: $gray
-	// font-weight: 400
+	color: $gray-text
+	font-weight: 500
 .my_modal
 	.modal_dialog_change
 		margin: 0

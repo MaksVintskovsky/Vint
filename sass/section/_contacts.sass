@@ -1,0 +1,54 @@
+.contacts
+    margin: 30px 15px
+    font-size: 18px
+    font-weight: 500
+    @media(min-width:992px)
+        margin: 30px 30px
+    .contacts_title
+        margin-bottom: 30px
+        @media(min-width:992px)
+            margin-left: 20px
+    .text_table_title
+        color: #000
+        font-weight: 700
+        background-color: $gray-bg
+    .text_table_body
+        padding: 0
+        flex-wrap: wrap
+        .my_border
+            @media(min-width:992px)
+                border-right: 1px solid $border
+        .custom_margin
+            margin-top: 40px
+            @media(min-width:992px)
+                margin-top: 0
+.text_table.first
+    margin-bottom: 20px
+    br 
+        @media(min-width:768px)
+            display: none
+        @media(min-width:992px)
+            display: block
+        @media(min-width:1100px)
+            display: none
+.text_table_subtitle
+    border-bottom: 1px solid $border
+    padding: 5px 10px
+.contacts_item
+    // margin: 10px 0 0px 10px
+    padding: 10px 10px
+    &.map
+        img
+            width: 100%
+.contacts_foto
+    border-top: 1px solid $border
+    padding-top: 20px
+    margin-top: 20px
+    img
+        margin: 0 auto 10px
+        display: block
+        @media(min-width:992px)
+            margin: 0 10px 10px 0
+            width: 100%
+    
+
