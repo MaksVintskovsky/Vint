@@ -695,6 +695,22 @@ body .welcome {
       margin: 50px auto 60px;
       padding: 0 30px; } }
 
+.text_page {
+  font-size: 14px; }
+  .text_page .tabs-content {
+    background-color: #fff; }
+  .text_page .text_table_title {
+    font-weight: 700;
+    background-color: #F5F5F5; }
+  .text_page .text_table_subtitle {
+    font-weight: 700;
+    color: #706F6F; }
+
+.text_table_allert {
+  background-color: #E6332A;
+  color: #fff;
+  padding: 5px 10px; }
+
 .card_wrapper {
   padding: 20px 15px; }
   @media (min-width: 992px) {
@@ -1578,6 +1594,38 @@ ul.secondary_menu {
   font-size: 14px;
   font-weight: 500;
   margin: 30px 0; }
+
+.page_404 {
+  text-align: center;
+  padding-top: 50px; }
+  .page_404 .head_404 {
+    max-width: 540px;
+    margin: 0 auto;
+    padding: 0 30px; }
+  .page_404 .title_404 {
+    font-size: 38px;
+    font-weight: 700; }
+  .page_404 .subtitle_404 {
+    font-size: 16px;
+    font-weight: 500; }
+  .page_404 .body_404 {
+    background-image: url("../../img/bg/404_bg.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+    padding: 60px 0 90px; }
+  .page_404 .img_404 {
+    margin: 0 0 50px 0; }
+    .page_404 .img_404 img {
+      width: 300px; }
+      @media (min-width: 992px) {
+        .page_404 .img_404 img {
+          width: 440px; } }
+  .page_404 .my_button {
+    width: 220px;
+    height: 40px;
+    font-size: 18px;
+    margin: 0 auto;
+    color: #000; }
 
 .catalog-wrapper {
   position: relative; }
