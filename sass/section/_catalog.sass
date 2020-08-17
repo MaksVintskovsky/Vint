@@ -13,21 +13,21 @@
 .catalog
     width: 100%
     color: $gray-text
-    .catalog_tabs
-        margin: 0 auto
-        width: max-content
-        @media(min-width:992px)
-            margin: 0 
-        span 
-            font-weight: 500
-            font-size: 14px
-            border-bottom: 1px dotted $gray-text
-    .catalog_tab
-        display: inline-block
-        margin: 0 20px 20px 0
-        cursor: pointer
-        &.active span
-            border-bottom: none
+.catalog_tabs
+    margin: 0 auto
+    width: max-content
+    @media(min-width:992px)
+        margin: 0 
+    span 
+        font-weight: 500
+        font-size: 14px
+        border-bottom: 1px dotted $gray-text
+.catalog_tab
+    display: inline-block
+    margin: 0 20px 20px 0
+    cursor: pointer
+    &.active span
+        border-bottom: none
 .catalog_header
     margin: 0 auto
     border-radius: 5px
@@ -326,44 +326,31 @@
     .catalog_num
         .catalog_dropdown
             margin: 0
-    .page_pagination
-        display: none
-        @media(min-width:992px)
-            display: inline-block
-            float: right
-        .page_item.active
-            .page-link
-                width: 25px
-                height: 25px
-                border-radius: 15px
-                background-color: $yellow
-                // margin-right: 2px
-                text-align: center
+.page_pagination
+    display: none
+    @media(min-width:992px)
+        display: inline-block
+        float: right
+    .page_item.active
         .page-link
-            border: none
-            font-size: 14px
-            font-weight: 500
-            color: #000
-            margin: 2px
-            line-height: 1.2
-            width: 25px
-        .page-link:hover
             width: 25px
             height: 25px
             border-radius: 15px
-            background-color: lighten(#FFC944, 20%)
-.help_block
-    margin-top: 20px
-.banner4
-    width: 290px
-    height: 635px
-    background-image: url('/../../img/bg/bg_help4.png')
-    padding: 400px 20px 30px
-    border-radius: 10px
-    .bunner_subtitle
-        font-size: 12px
-        font-weight: 300
-        margin: 25px 0 40px
-    a 
-        margin: 0 auto
+            background-color: $yellow
+            // margin-right: 2px
+            text-align: center
+    .page-link
+        border: none
+        font-size: 14px
+        font-weight: 500
+        color: #000
+        margin: 2px
+        line-height: 1.2
+        width: 25px
+    .page-link:hover
+        width: 25px
+        height: 25px
+        border-radius: 15px
+        background-color: lighten(#FFC944, 20%)
+
         

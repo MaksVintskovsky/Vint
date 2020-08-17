@@ -1,0 +1,241 @@
+.popup
+    position: relative
+    width: 345px
+    margin: 20px auto 40px
+    padding: 40px 60px 30px
+    background-color: #fff
+    font-weight: 500
+    font-size: 12px
+    text-align: center
+    z-index: 11
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2)
+    &::after
+        position: absolute
+        content: ""
+        width: 100%
+        height: 26px
+        background-image: url('../../img/popup-logo.png')
+        top: 100%
+        left: 0
+    .my_button
+        width: 220px
+        height: 32px
+        margin: 10px auto 0
+.popup-close
+	position: absolute
+	top: 15px
+	right: 15px
+	padding: 10px
+	cursor: pointer
+.bg_popup-img
+	position: absolute
+	top: 0px
+	left: 0px
+	z-index: -1
+.popup_title
+    font-size: 20px
+    line-height: 1.2
+    font-weight: 700
+    span
+        font-weight: 600
+.popup_subtitle
+	margin-bottom: 15px
+.form-input, .form-textarea
+	width: 225px
+	border: 1px solid $border
+.form-input
+    height: 32px
+    margin-bottom: 15px
+    padding-left: 10px
+.form-textarea
+    height: 90px
+    padding-left: 10px
+
+.form-submit
+	display: block
+	color: #fff
+	padding: 10px 20px
+	margin: 0 auto
+
+.popup.popup_discount
+    background-image: url('../../img/bg/disc-bg.jpg')
+    background-size: cover
+    color: #fff
+    &::after
+        display: none
+
+.popup_recall
+    .popup_title
+        margin-bottom: 35px
+    .form-submit
+        background-color: $red
+        &:focus, &:active, &:hover
+            background-color: darken($red, 10%)
+
+#captcha
+    margin: 5px auto 17px
+    width: 220px
+    background-color: #dadada
+    padding: 25px 20px
+    font-size: 12px
+    a
+        color: #666
+        width: 220px
+        &:focus, &:active, &:hover
+            background-color: darken(#dadada, 10%)
+.popup_enter
+    .form_input
+        color: #ffffff
+        height: 32px
+        border-radius: 7px
+    .btn_sosial-wrapper
+        margin: 0px auto 25px
+        display: flex
+        justify-content: space-between
+        .btn_sosial
+            width: 115px
+            margin: 0
+            padding: 0
+            font-weight: 500
+            font-size: 12px
+        #btn_facebook
+            background-color: #3b5a94
+            margin-right: 10px
+            &:focus, &:active, &:hover
+                background-color: darken(#3b5a94, 10%)
+        #btn_google
+            background-color: #f9463e
+            &:focus, &:active, &:hover
+                background-color: darken(#f9463e, 10%)
+    .blue_text
+        margin-bottom: 30px
+        display: block
+
+.popup_registr
+	.form-submit
+		background-color: $green
+		text-transform: uppercase
+		&:focus, &:active, &:hover
+			background-color: darken($green, 10%)
+	.popup_title
+		margin-bottom: 20px
+	.popup_bottom
+		font-size: 12px
+		margin: 20px 0 30px
+		display: inline-block
+		color: #333
+	#modalEnter
+		color: #0089d5
+		margin-left: 20px
+		text-decoration: underline
+		text-decoration-style: dotted
+		cursor: pointer
+.popup_psw
+	.form-submit
+		background-color: $green
+		text-transform: uppercase
+		margin-bottom: 40px
+		&:focus, &:active, &:hover
+			background-color: darken($green, 10%)
+	.popup_title
+		margin-bottom: 20px
+.popup_basket
+    padding: 0 0 30px 0
+    width: 480px
+    &::after
+        display: none
+    @media(min-width:992px)
+        width: 600px
+.popup_basket-header
+	background-color: $yellow
+	font-size: 24px
+	font-weight: 700
+	padding: 20px
+	.popup-close
+		top: 5px
+		right: 5px
+
+.popup_basket-item
+	justify-content: space-between
+	align-items: center
+	padding: 30px 20px 20px 45px
+	position: relative
+.popup_basket-item_img
+    position: relative
+    width: 58px
+    height: 58px
+    border: 1px solid #919191
+    border-radius: 2px
+    margin-right: 15px
+    img
+        height: 100%
+    .basket-item_close
+        position: absolute
+        left: -20px
+        cursor: pointer
+        color: $green
+        font-size: 16px
+        top: 50%
+        z-index: 2
+        transform: translateY(-50%)
+
+.basket-item_title
+    max-width: 270px
+    text-align: left
+    font-size: 14px
+    font-weight: 700
+    flex-grow: 1
+
+.basket-item_price
+    display: flex
+    align-items: center
+    margin: 20px auto 0
+    width: max-content
+    @media(min-width:992px)
+        margin: 0 auto
+    .item_count
+        margin-right: 30px
+
+.popup_basket-total
+    margin: 0 30px
+    padding: 20px 30px 0
+    border-top: 1px solid #919191
+    border-bottom: 1px solid #919191
+    .price
+        margin-bottom: 20px
+        display: flex
+        justify-content: space-between
+        span 
+            color: #666666
+            font-size: 13px
+            font-weight: 400
+        strong, .total-goods-num
+            color: #000000
+            font-size: 14px
+            font-weight: 700
+.popup_basket-message
+	background-color: $gray-bg
+	padding: 20px 35px
+	margin: 20px 0 30px
+	text-align: left
+	font-size: 13px
+	font-weight: 400
+.popup_basket-buttons
+    margin-bottom: 30px
+    @media(min-width:992px)
+        display: flex
+        justify-content: center
+        align-items: center
+    .basket_submit
+        background-color: $green
+    .my_button
+        width: 160px
+        height: 32px
+        margin: 10px auto
+        @media(min-width:992px)
+            margin: 0 20px 0 0
+    .continue
+        margin: 0
+        cursor: pointer
+        font-weight: 400
+        font-size: 13px

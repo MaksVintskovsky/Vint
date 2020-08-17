@@ -256,185 +256,115 @@
           </li>
         </ul>
       </div>
-
-    <div class="page_404">
-      <div class="head_404">
-        <div class="title_404">Ойой!!!</div>
-        <div class="subtitle_404">К сожалению, эта страница переехала. Но вы можете поискать еще много интересного в каталоге!</div>
-      </div>
-      <div class="body_404">
-        <div class="img_404"><img src="img/bg/404.png" alt="img"></div>
-        <button class=" btn_yellow my_button">Найти</button>
-      </div>
+  <div class=" popup popup_enter">
+    <img class="popup-close" src="img/catalog/popup-close.png" alt="close">
+    <div class="popup_title">Войти</div>
+    <div class="popup_subtitle">войти через соц. сети</div>
+    <div class="btn_sosial-wrapper">
+      <input type="submit" id="btn_facebook" class="form_input btn_sosial" value="Facebook">
+      <input type="submit" id="btn_google" class="form_input btn_sosial" value="Google">
     </div>
-    <div class="views">
-      <div class="slider_title">Вы просматривали</div>
-      <div class="views_slider owl-carousel">
-        <div class="views_slider_item">
-          <div class="catalog_item ">
-            <div class="catalog_item_img_block">
-              <img class="catalog_item_img" src="img/catalog/catalog-item.png" alt="img">
-              <div class="label">
-                <img src="img/catalog/disc_label.png" alt="labal">
-                <img src="img/catalog/disc_yellow.png" alt="labal">
-              </div>
-              <div class="balance"><img src="img/catalog/balance_black.png" alt="img"></div>
+    <div class="popup_subtitle">войти через email</div>
+    <form>
+      <input type="text" name="email" class="form-input" placeholder="Email@email.com">
+      <input type="text" name="password" class="form-input" placeholder="Введите пароль">
+      <span class="blue_text">забыли пароль</span>
+      <button class="my_button">ВОЙТИ</button>
+    </form>
+    <button class="my_button btn_gray">Регистрация</button>
+  </div>
+  <div class=" popup popup_registr">
+    <img class="popup-close" src="img/catalog/popup-close.png" alt="close">
+    <div class="popup_title">Регистрация</div>
+    <form>
+      <input type="text" name="name" class="form-input" placeholder="ФИО*">
+      <input type="text" name="email" class="form-input" placeholder="E-mail*">
+      <input type="text" name="password" class="form-input" placeholder="Пароль*">
+      <input type="text" name="password" class="form-input" placeholder="Подтвердите пароль*">
+      <input type="text" name="phone" class="form-input" placeholder="Ваш телефон">
+      <button class="my_button">Зарегистрироваться</button>
+    </form>
+    <span class="popup_bottom">У меня уже есть аккаунт, </span> <span id="modalEnter">Войти</span>
+  </div>
+  <div class=" popup popup_psw">
+    <img class="popup-close" src="img/catalog/popup-close.png" alt="close">
+    <div class="popup_title">Восстановление <br> пароля</div>
+    <form>
+      <input type="text" name="email" class="form-input" placeholder="E-mail">
+      <button class="my_button">Отправить пароль</button>
+      <!-- <input type="submit" class="form-submit" value="Отправить пароль"> -->
+    </form>
+  </div>
+  <div class="popup popup_discount">
+    <img class="popup-close" src="img/catalog/popup-close.png" alt="close">
+    <div class="mb-3 popup_title"><span>Подпишитесь и получите</span> скидку 10%</div>
+    <form>
+      <input type="text" name="name" class="form-input" placeholder="Введите имя">
+      <input type="text" name="email" class="form-input" placeholder="Введите свой email">
+      <button class="my_button btn_yellow">Получить скидку</button>
+      <!-- <input type="submit"class="form-submit" value="ПОЛУЧИТЬ СКИДКУ"> -->
+    </form>
+  </div>
+  <div class=" popup popup_recall">
+    <img class="popup-close" src="img/catalog/popup-close.png" alt="close">
+    <div class="popup_title">Помощь</div>
+    <form action="">
+      <input type="text" name="name" class="form-input" placeholder="Введите имя">
+      <input type="text" name="phone" class="form-input" placeholder="+380">
+      <textarea name="message"  cols="30" rows="10" class="form-textarea" placeholder="Комментарий"></textarea>
+      <div id="captcha" class="btn"><a href="#">reCAPTCHA</a></div>
+      <button class="my_button">Жду звонка</button>
+    </form>
+  </div>
+  <div class=" popup popup_basket">
+    <div class="popup_basket-header">
+      <img class="popup-close" src="img/catalog/popup-close.png" alt="close">
+      <!-- <img class="bg-left" src="img/bg/basket-left.png" alt="img"> -->
+      <!-- <img class="bg-right" src="img/bg/basket-right.png" alt="img"> -->
+      <span>1</span>  товар(ов) - <span>658 грн</span>
+    </div>
+    <div class=" row no-gutters popup_basket-item">
+      <div class=" col-12 col-lg-7">
+        <div class="row no-gutters align-items-center">
+          <div class="col-3">
+            <div class="popup_basket-item_img">
+              <img src="img/catalog/goods1.png" alt="img">
+              <div class="basket-item_close">x</div>
             </div>
-            <div class="catalog_item_body">
-              <div class="catalog_item_top_block">
-                <div class="name_rate">
-                  <div class="catalog_item_title"><a href=""> Мобильный телефон Samsung Galaxy M31  6/128GB Blue (SM-M315FZBVSEK)</a></div>
-                  <div class="catalog_item_rating">
-                    <img src="img/catalog/stars.png" alt="stars">
-                    <span class="catalog_item_comments">34 отзыва</span>
-                  </div>
-                </div>
-                <div class="catalog_item_price">
-                  <span> 155 грн</span>
-                  <span class="old_price"> 155 грн</span>
-                </div>
-              </div>
-            </div>
+          </div>
+          <div class="col-9">
+            <div class="basket-item_title">Мобильный телефон Samsung Galaxy M31 6/128GB Blue (SM-M315FZBVSEK). </div>
           </div>
         </div>
-        <div class="views_slider_item">
-          <div class="catalog_item ">
-            <div class="catalog_item_img_block">
-              <img class="catalog_item_img" src="img/catalog/catalog-item.png" alt="img">
-              <div class="label">
-                <img src="img/catalog/disc_label.png" alt="labal">
-                <img src="img/catalog/disc_yellow.png" alt="labal">
-              </div>
-              <div class="balance"><img src="img/catalog/balance_black.png" alt="img"></div>
-            </div>
-            <div class="catalog_item_body">
-              <div class="catalog_item_top_block">
-                <div class="name_rate">
-                  <div class="catalog_item_title"><a href=""> Мобильный телефон Samsung Galaxy M31  6/128GB Blue (SM-M315FZBVSEK)</a></div>
-                  <div class="catalog_item_rating">
-                    <img src="img/catalog/stars.png" alt="stars">
-                    <span class="catalog_item_comments">34 отзыва</span>
-                  </div>
-                </div>
-                <div class="catalog_item_price">
-                  <span class="old_price"> 155 грн</span>
-                  <span> 155 грн</span>
-                </div>
-              </div>
-            </div>
+      </div>
+      <div class="col-12 col-lg-5">
+        <div class="basket-item_price">
+          <div class="item_count">
+            <span class="cart_prod_qty_change cart_prod_qty_del">-</span>
+            <input type="number" class="item_count_value" value="1">
+            <span class="cart_prod_qty_change cart_prod_qty_add">+</span>
           </div>
-        </div>
-        <div class="views_slider_item">
-          <div class="catalog_item ">
-            <div class="catalog_item_img_block">
-              <img class="catalog_item_img" src="img/catalog/catalog-item.png" alt="img">
-              <div class="label">
-                <img src="img/catalog/disc_label.png" alt="labal">
-                <img src="img/catalog/disc_yellow.png" alt="labal">
-              </div>
-              <div class="balance"><img src="img/catalog/balance_black.png" alt="img"></div>
-            </div>
-            <div class="catalog_item_body">
-              <div class="catalog_item_top_block">
-                <div class="name_rate">
-                  <div class="catalog_item_title"><a href=""> Мобильный телефон Samsung Galaxy M31  6/128GB Blue (SM-M315FZBVSEK)</a></div>
-                  <div class="catalog_item_rating">
-                    <img src="img/catalog/stars.png" alt="stars">
-                    <span class="catalog_item_comments">34 отзыва</span>
-                  </div>
-                </div>
-                <div class="catalog_item_price">
-                  <span class="old_price"> 155 грн</span>
-                  <span> 155 грн</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="views_slider_item">
-          <div class="catalog_item ">
-            <div class="catalog_item_img_block">
-              <img class="catalog_item_img" src="img/catalog/catalog-item.png" alt="img">
-              <div class="label">
-                <img src="img/catalog/disc_label.png" alt="labal">
-                <img src="img/catalog/disc_yellow.png" alt="labal">
-              </div>
-              <div class="balance"><img src="img/catalog/balance_black.png" alt="img"></div>
-            </div>
-            <div class="catalog_item_body">
-              <div class="catalog_item_top_block">
-                <div class="name_rate">
-                  <div class="catalog_item_title"><a href=""> Мобильный телефон Samsung Galaxy M31  6/128GB Blue (SM-M315FZBVSEK)</a></div>
-                  <div class="catalog_item_rating">
-                    <img src="img/catalog/stars.png" alt="stars">
-                    <span class="catalog_item_comments">34 отзыва</span>
-                  </div>
-                </div>
-                <div class="catalog_item_price">
-                  <span class="old_price"> 155 грн</span>
-                  <span> 155 грн</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="views_slider_item">
-          <div class="catalog_item ">
-            <div class="catalog_item_img_block">
-              <img class="catalog_item_img" src="img/catalog/catalog-item.png" alt="img">
-              <div class="label">
-                <img src="img/catalog/disc_label.png" alt="labal">
-                <img src="img/catalog/disc_yellow.png" alt="labal">
-              </div>
-              <div class="balance"><img src="img/catalog/balance_black.png" alt="img"></div>
-            </div>
-            <div class="catalog_item_body">
-              <div class="catalog_item_top_block">
-                <div class="name_rate">
-                  <div class="catalog_item_title"><a href=""> Мобильный телефон Samsung Galaxy M31  6/128GB Blue (SM-M315FZBVSEK)</a></div>
-                  <div class="catalog_item_rating">
-                    <img src="img/catalog/stars.png" alt="stars">
-                    <span class="catalog_item_comments">34 отзыва</span>
-                  </div>
-                </div>
-                <div class="catalog_item_price">
-                  <span class="old_price"> 155 грн</span>
-                  <span> 155 грн</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="views_slider_item">
-          <div class="catalog_item ">
-            <div class="catalog_item_img_block">
-              <img class="catalog_item_img" src="img/catalog/catalog-item.png" alt="img">
-              <div class="label">
-                <img src="img/catalog/disc_label.png" alt="labal">
-                <img src="img/catalog/disc_yellow.png" alt="labal">
-              </div>
-              <div class="balance"><img src="img/catalog/balance_black.png" alt="img"></div>
-            </div>
-            <div class="catalog_item_body">
-              <div class="catalog_item_top_block">
-                <div class="name_rate">
-                  <div class="catalog_item_title"><a href=""> Мобильный телефон Samsung Galaxy M31  6/128GB Blue (SM-M315FZBVSEK)</a></div>
-                  <div class="catalog_item_rating">
-                    <img src="img/catalog/stars.png" alt="stars">
-                    <span class="catalog_item_comments">34 отзыва</span>
-                  </div>
-                </div>
-                <div class="catalog_item_price">
-                  <span class="old_price"> 155 грн</span>
-                  <span> 155 грн</span>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div class="basket-price_num"><span class="mr-2 basket-price_value">10 658</span>  грн</div>
         </div>
       </div>
     </div>
-
+    <div class="popup_basket-total">
+      <div class="price">
+        <span>Предполагаемая стоимость доставки</span> <strong><span class="total-goods-num">50</span> грн</strong>
+      </div>
+      <div class="price">
+        <span>Итого</span> <strong><span class="total-goods-num">708 </span> грн</strong>
+      </div>
+    </div>
+    <div class="popup_basket-message">
+      Товар Мобильный телефон Samsung Galaxy M31 добавлен в корзину!
+    </div>
+    <div class="popup_basket-buttons">
+      <button class="my_button">Оформить заказ</button>
+      <a href="basket.html"><input type="submit" class="my_button btn_gray" value="Открыть корзину"></a>
+      <div class="continue"><span>Продолжить выбор</span></div>
+    </div>
+  </div>
   
       <footer class=" footer">
         <div class="container-fluid">
