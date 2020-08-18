@@ -74,29 +74,29 @@ $(document).ready(function(){
     navText: ["<img src='img/slider/sliderLeft.png' class='' alt='1'>",
               "<img src='img/slider/sliderRight.png' class='' alt='2'>"]
   });
-  $(".card-tabs").owlCarousel({
-    loop: false,
-    nav: false,
-    dots: false,
-    autoWidth:true,
-    // center: true,
-    // margin: 20,
+  // $(".card-tabs").owlCarousel({
+  //   loop: false,
+  //   nav: false,
+  //   dots: false,
+  //   autoWidth:true,
+  //   // center: true,
+  //   // margin: 20,
     
-    responsive : {
-      0 : {
-        items: 3,
-        // autoWidth:true
-      },
-      768 : {
-        items: 4,
-        // autoWidth:true,
-        // margin: 20
-      },
-      1170 : {
-        items: 4,
-      }
-    }
-  });
+  //   responsive : {
+  //     0 : {
+  //       items: 3,
+  //       // autoWidth:true
+  //     },
+  //     768 : {
+  //       items: 4,
+  //       // autoWidth:true,
+  //       // margin: 20
+  //     },
+  //     1170 : {
+  //       items: 4,
+  //     }
+  //   }
+  // });
 
   $( "#slider-range" ).slider({
     range: true,
@@ -214,11 +214,10 @@ function tableView() {
 
 // :::::::::::: tab-content :::::::::::::
 $(".tab-content").not(":first").hide();
-  $(".card-tab-wrapper").click(function() {
+  $(".card-tab").click(function() {
     $(".card-tab").removeClass("active").eq($(this).index()).addClass("active");
     $(".tab-content").hide().eq($(this).index()).fadeIn();
-  });
-  // .eq(0).addClass("active");
+  }).eq(0).addClass("active");
  // :::::::::::: my_button preventDefaul:::::::::::::
 // $('.category_item a').on('click', function(e){
 //   e.preventDefault()

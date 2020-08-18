@@ -768,7 +768,6 @@ body .welcome {
   .item_count input {
     width: 20px;
     border: none;
-    padding: 0 0 0 0px;
     margin: 0; }
 
 .card_price_block {
@@ -858,7 +857,10 @@ body .welcome {
 .card-tabs {
   margin: 20px 0 0;
   background-color: #575756;
-  padding: 15px 20px; }
+  padding: 15px 20px;
+  height: 47px;
+  overflow-x: overlay;
+  white-space: nowrap; }
   @media (min-width: 992px) {
     .card-tabs {
       margin: 20px 30px 0; } }
@@ -2096,6 +2098,7 @@ ul.secondary_menu {
     background-color: #E6332A; }
   .filter-section .ui-widget-content {
     margin-top: 25px;
+    margin-left: 10px;
     border: none;
     background-color: #ededed;
     color: #333333; }
@@ -2786,7 +2789,7 @@ ul.secondary_menu {
   margin-top: 20px; }
 
 .banner5 {
-  width: 290px;
+  max-width: 290px;
   height: 635px;
   padding: 380px 20px 30px;
   border-radius: 10px;
@@ -2799,7 +2802,7 @@ ul.secondary_menu {
     margin: 0 auto; }
 
 .bunner_title {
-  font-size: 34px;
+  font-size: 32px;
   font-weight: 500;
   margin-bottom: 15px; }
 
@@ -2825,61 +2828,61 @@ ul.secondary_menu {
     background-image: url("../../img/bg/bg_help4.png"); } }
 
 .quality1 {
-  background-image: url("../../img/bg/bg-diff/quality1.jpg"); }
+  background-image: url("../../img/bg/bg-diff/quality1.png"); }
 
 .quality2 {
-  background-image: url("../../img/bg/bg-diff/quality2.jpg"); }
+  background-image: url("../../img/bg/bg-diff/quality2.png"); }
 
 .quality3 {
-  background-image: url("../../img/bg/bg-diff/quality3.jpg"); }
+  background-image: url("../../img/bg/bg-diff/quality3.png"); }
 
 .quality4 {
-  background-image: url("../../img/bg/bg-diff/quality4.jpg"); }
+  background-image: url("../../img/bg/bg-diff/quality4.png"); }
 
 .quality5 {
-  background-image: url("../../img/bg/bg-diff/quality5.jpg"); }
+  background-image: url("../../img/bg/bg-diff/quality5.png"); }
 
 @media (max-width: 992px) {
   .quality1, .quality2, .quality3, .quality4 {
-    background-image: url("../../img/bg/bg-diff/quality4.jpg"); } }
+    background-image: url("../../img/bg/bg-diff/quality4.png"); } }
 
 .best1 {
-  background-image: url("../../img/bg/bg-diff/best1.jpg"); }
+  background-image: url("../../img/bg/bg-diff/best1.png"); }
 
 .best2 {
-  background-image: url("../../img/bg/bg-diff/best2.jpg"); }
+  background-image: url("../../img/bg/bg-diff/best2.png"); }
 
 .best3 {
-  background-image: url("../../img/bg/bg-diff/best3.jpg"); }
+  background-image: url("../../img/bg/bg-diff/best3.png"); }
 
 .best4 {
-  background-image: url("../../img/bg/bg-diff/best4.jpg"); }
+  background-image: url("../../img/bg/bg-diff/best4.png"); }
 
 .best5 {
-  background-image: url("../../img/bg/bg-diff/best5.jpg"); }
+  background-image: url("../../img/bg/bg-diff/best5.png"); }
 
 @media (max-width: 992px) {
   .best1, .best2, .best3, .best4 {
-    background-image: url("../../img/bg/bg-diff/best4.jpg"); } }
+    background-image: url("../../img/bg/bg-diff/best4.png"); } }
 
 .wor1 {
-  background-image: url("../../img/bg/bg-diff/wor1.jpg"); }
+  background-image: url("../../img/bg/bg-diff/wor1.png"); }
 
 .wor2 {
-  background-image: url("../../img/bg/bg-diff/wor2.jpg"); }
+  background-image: url("../../img/bg/bg-diff/wor2.png"); }
 
 .wor3 {
-  background-image: url("../../img/bg/bg-diff/wor3.jpg"); }
+  background-image: url("../../img/bg/bg-diff/wor3.png"); }
 
 .wor4 {
-  background-image: url("../../img/bg/bg-diff/wor4.jpg"); }
+  background-image: url("../../img/bg/bg-diff/wor4.png"); }
 
 .wor5 {
-  background-image: url("../../img/bg/bg-diff/wor5.jpg"); }
+  background-image: url("../../img/bg/bg-diff/wor5.png"); }
 
 @media (max-width: 992px) {
   .wor1, .wor2, .wor3, .wor4 {
-    background-image: url("../../img/bg/bg-diff/wor4.jpg"); } }
+    background-image: url("../../img/bg/bg-diff/wor4.png"); } }
 
 .footer {
   border: 15px solid #93C01F;

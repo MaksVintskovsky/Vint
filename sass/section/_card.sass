@@ -1,7 +1,5 @@
 .card_wrapper
     padding: 20px 15px
-    @media(min-width:768px)
-        // padding: 20px 30px
     @media(min-width:992px)
         padding: 20px 30px
     @media(min-width:1100px)
@@ -11,8 +9,6 @@
         margin: 20px 0 0 0
         font-size: 14px
         font-weight: 500
-.card_sliders
-
 .card_top_mob
     @media(min-width:992px)
         display: none
@@ -20,14 +16,11 @@
     margin-bottom: 15px
     .bx-controls
         display: none
-.card_slider_top
-    
 .card_slider_item
     position: relative
     background-color: $gray_bg
     border: 1px solid $border
     border-radius: 5px
-    
     >img 
         margin: 0 auto
     .label
@@ -60,8 +53,6 @@
     display: none
     @media(min-width:992px)
         display: flex
-        // display: flex
-        // justify-content: space-between
     .code
         margin-left: auto
 .card_title
@@ -83,7 +74,6 @@
     @media(min-width:992px)
         margin-top: 0px
     align-items: center
-    
     .color
         @media(min-width:992px)
             text-align: right
@@ -102,7 +92,7 @@
     input
         width: 20px
         border: none
-        padding: 0 0 0 0px
+        // padding: 0 0 0 0px
         margin: 0
 .card_price_block
     align-items: center
@@ -179,11 +169,12 @@
 .card-tabs-wrapper
     text-align: left
 .card-tabs
-    // display: flex
-    // flex-direction: column
     margin: 20px 0 0
     background-color: #575756
     padding: 15px 20px
+    height: 47px
+    overflow-x: overlay
+    white-space: nowrap
     @media(min-width:992px)
         margin: 20px 30px 0
     @media(min-width:1100px)
@@ -191,15 +182,11 @@
 .card-tab
     display: inline-block
     margin-right: 30px
-    // margin-top: 5px
     span
         cursor: pointer
         color: #fff
         font-size: 14px
         font-weight: 500
-        // border-bottom: 1px dotted #333
-        @media(min-width:768px)
-            // font-weight: 400
 .card-tab.active
     span
         color: $green
@@ -233,7 +220,6 @@
             margin-bottom: 15px
             @media(min-width:992px)
                 width: auto
-                // margin: 0
     .write_comment
         background-color: #EDEDED
         border-radius: 5px
@@ -258,8 +244,6 @@
         .comment_text
             @media(min-width:992px)
                 margin-top: 20px
-    .comment_text
-        // font-size: 14px
     .more
         text-align: center
         cursor: pointer
@@ -269,7 +253,6 @@
         margin: 20px 0 10px
         >div
             display: inline-block
-            
             span 
                 text-decoration: underline
                 cursor: pointer
