@@ -1,6 +1,6 @@
 const gulp = require('gulp');
 const concat = require('gulp-concat');
-const autoprefixer = require('gulp-autoprefixer');
+// const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
 const uglify = require('gulp-uglify');
 const del = require('del');
@@ -22,10 +22,10 @@ function styles(){
 				.pipe(sourcemaps.init())
 				.pipe(sass())
 				.pipe(concat('main.css'))			
-				.pipe(autoprefixer({
+				// .pipe(autoprefixer({
 					// overrideBrowserslist: ['> 0.1%'],
-		            cascade: false
-		        }))
+		            // cascade: false
+		        // }))
 		        // .pipe(cleanCSS({level: 2}))
 				.pipe(sourcemaps.write('.'))
 				.pipe(gulp.dest('./build/css'))
